@@ -6,8 +6,8 @@ const Home = () => {
   return (
     <div className="grid min-h-screen grid-cols-2 justify-items-center">
       <div>
-        <Header type={component_type.header}>Hey there!</Header>
-        <Header type={component_type.header} headerType={component_type.header_light} className="mt-6">
+        <Header>Hey there!</Header>
+        <Header headerType={component_type.header_light} className="mt-6">
           I'm Dibendu
         </Header>
       </div>
