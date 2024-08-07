@@ -12,4 +12,5 @@ Currently, two official plugins are available:
 - Follow https://tailwindcss.com/docs/installation to setup tailwindcss.
 - Install Tailwind CSS Intellisense VS Code extension for suggestions and auto-complete.
 - Install Prettier VS Code extension for code formatting.
+- # Add .prettierrc file and add "plugins": ["prettier-plugin-tailwindcss"].
 - # Add package 'prettier' and 'prettier-plugin-tailwindcss' for tailwindcss class auto ordering.
