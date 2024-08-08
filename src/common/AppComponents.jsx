@@ -12,7 +12,7 @@ export const Header = ({ children, className, headerType = "" }) => {
 };
 
 export const Button = ({ children }) => {
-  return <a className="bg-[#6b5d4a] px-4 py-2 font-extralight text-white">{children}</a>;
+  return <a className="bg-[#46351d] p-4 font-extralight text-white">{children}</a>;
 };
 
 export const Footer = ({ children }) => {
