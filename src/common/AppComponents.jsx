@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.scss";
-import { component_type } from "./component-type";
+import { header_type } from "./component-type";
 
 export const Container = ({ children, className }) => {
   return <div className={`h-full ${className ?? ""}`}>{children}</div>;
@@ -8,7 +8,7 @@ export const Container = ({ children, className }) => {
 
 export const Header = ({ children, className, headerType = "" }) => {
   const cn = className ?? "";
-  return headerType === component_type.header_light ? <h1 className={`${cn} font-thin`}>{children}</h1> : <h1 className={cn}>{children}</h1>;
+  return headerType === header_type.bold ? <h1 className={cn}>{children}</h1> : <h1 className={`${cn} font-thin`}>{children}</h1>;
 };
 
 export const Button = ({ children }) => {
