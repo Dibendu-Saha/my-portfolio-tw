@@ -24,8 +24,8 @@ const AboutProfessional = () => {
 
           <p>
             I also hold a certification in{" "}
-            <a href="https://www.credly.com/badges/3c6991e8-43ec-4dc5-8006-d19ec9a456e6" target="_blank" rel="noreferrer">
-              <span className="border-b border-black">Azure Fundamentals</span>
+            <a href="https://www.credly.com/badges/3c6991e8-43ec-4dc5-8006-d19ec9a456e6" target="_blank" rel="noreferrer" className="hover:text-blue-900">
+              <span className="border-b border-black hover:border-blue-900">Azure Fundamentals</span>
               <span>
                 <img src={iconNewWindow} alt="Open in new window icon" className="mb-2 ml-1 mr-2 inline-block size-4" />
               </span>
