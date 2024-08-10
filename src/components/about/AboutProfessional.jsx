@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Container, Footer, Header, LeftPane, PageContent, RightPane } from "../../common/AppComponents";
 import iconNewWindow from "../../assets/img/icon-new-window.png";
+import SkillIcons from "./skill-icons/SkillIcons";
 
 const AboutProfessional = () => {
   return (
@@ -34,12 +35,15 @@ const AboutProfessional = () => {
           </p>
 
           <p>
-            At present, I'm a <strong>Sr. Software Engineer</strong> at <strong>NatWest Group</strong>, where I work as a full-stack developer, developing user
-            interface components with <strong>HTML5, CSS3, React</strong> and connect it via the Web API using <strong>C#, ASP.NET Core</strong> and{" "}
-            <strong>SQL Server</strong>.
+            At present, I'm a <strong>Sr. Software Engineer</strong> at <strong>NatWest Group</strong>, where I primarily work on the frontend, developing user
+            interface components with <strong>React</strong> and <strong>SCSS</strong> and connect it via the Web API using <strong>C#, ASP.NET Core</strong>{" "}
+            and <strong>SQL Server</strong>.
           </p>
         </LeftPane>
-        <RightPane></RightPane>
+
+        <RightPane>
+          <SkillIcons />
+        </RightPane>
       </PageContent>
 
       <Footer>
