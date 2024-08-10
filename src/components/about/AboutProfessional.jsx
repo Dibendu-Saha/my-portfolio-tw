@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Container, Footer, Header, LeftPane, PageContent, RightPane } from "../../common/AppComponents";
+import iconNewWindow from "../../assets/img/icon-new-window.png";
 
 const AboutProfessional = () => {
   return (
@@ -24,10 +25,11 @@ const AboutProfessional = () => {
           <p>
             I also hold a certification in{" "}
             <a href="https://www.credly.com/badges/3c6991e8-43ec-4dc5-8006-d19ec9a456e6" target="_blank" rel="noreferrer">
-              <span className="link-text">Azure Fundamentals</span>
-              {/* TODO: add missing icon */}
-              <span> {/* <img src={icon_new_window} alt="Open in new window icon" className="icon-new-window" /> */}</span>
-            </a>{" "}
+              <span className="border-b border-black">Azure Fundamentals</span>
+              <span>
+                <img src={iconNewWindow} alt="Open in new window icon" className="mb-2 ml-1 mr-2 inline-block size-4" />
+              </span>
+            </a>
             from Microsoft.
           </p>
 
