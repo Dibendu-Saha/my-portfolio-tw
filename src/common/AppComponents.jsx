@@ -21,7 +21,7 @@ export const LeftPane = ({ children }) => {
 };
 
 export const RightPane = ({ children }) => {
-  return <div className="h-20 w-full">{children}</div>;
+  return <div className="w-full">{children}</div>;
 };
 
 export const IconCard = ({ imgSrc, altText, className }) => {
