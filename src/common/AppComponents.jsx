@@ -24,8 +24,14 @@ export const RightPane = ({ children }) => {
   return <div className="w-full">{children}</div>;
 };
 
-export const IconCard = ({ imgSrc, altText, className }) => {
-  return <img src={imgSrc} alt={altText} className={className ? `${className}` : "size-24"} />;
+export const IconCard = ({ imgSrc, altText, title, className }) => {
+  const cn = "flex flex-col items-center gap-2";
+  return (
+    <div className={className ? `${className} ${cn}` : cn}>
+      <img src={imgSrc} alt={altText} className="peer size-24 transition-all duration-500 hover:-translate-y-4" />
+      <p className="opacity-0 transition-all duration-500 peer-hover:-translate-y-4 peer-hover:opacity-100">{title}</p>
+    </div>
+  );
 };
 
 export const Button = ({ children, link }) => {

@@ -1,7 +1,16 @@
 import React from "react";
-import { Button, Container, Footer, Header, LeftPane, PageContent, RightPane } from "../../common/AppComponents";
+import { Button, Container, Footer, Header, IconCard, LeftPane, PageContent, RightPane } from "../../common/AppComponents";
 import iconNewWindow from "../../assets/img/icon-new-window.png";
-import SkillIcons from "./skill-icons/SkillIcons";
+import reactIcon from "../../assets/img/icon-react.svg";
+import reduxIcon from "../../assets/img/icon-redux.svg";
+import jsIcon from "../../assets/img/icon-javascript.svg";
+import jqueryIcon from "../../assets/img/icon-jquery.svg";
+import htmlIcon from "../../assets/img/icon-html.svg";
+import cssIcon from "../../assets/img/icon-css3.svg";
+import dotNetIcon from "../../assets/img/icon-dotnet-core.svg";
+import cSharpIcon from "../../assets/img/icon-c-sharp.svg";
+import apiIcon from "../../assets/img/icon-api.svg";
+import dbIcon from "../../assets/img/icon-database.svg";
 
 const AboutProfessional = () => {
   return (
@@ -42,7 +51,20 @@ const AboutProfessional = () => {
         </LeftPane>
 
         <RightPane>
-          <SkillIcons />
+          <div className="grid grid-cols-4 gap-y-6">
+            <IconCard imgSrc={reactIcon} altText="react icon" title="React" />
+            <IconCard imgSrc={reduxIcon} altText="redux icon" title="Redux" />
+            <IconCard imgSrc={jsIcon} altText="javascript icon" title="JavaScipt" />
+            <IconCard imgSrc={jqueryIcon} altText="jquery icon" title="jQuery" />
+
+            <IconCard imgSrc={htmlIcon} altText="html icon" title="HTML" />
+            <IconCard imgSrc={cssIcon} altText="css icon" title="CSS" />
+            <IconCard imgSrc={dotNetIcon} altText="dot net core icon" title=".NET Core" />
+            <IconCard imgSrc={cSharpIcon} altText="c sharp icon" title="C#" />
+
+            <IconCard imgSrc={apiIcon} altText="api icon" title="Web API" className="col-start-2" />
+            <IconCard imgSrc={dbIcon} altText="database icon" title="SQL Server" className="col-start-3" />
+          </div>
         </RightPane>
       </PageContent>
 
