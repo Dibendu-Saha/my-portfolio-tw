@@ -9,7 +9,10 @@ $font-color: #454545;
 $secondary-color: #6b5d4a;
 
 
-
 body {
     font-family: 'Poppins', sans-serif;
+}
+
+.app-bg {
+    background-image: linear-gradient(90deg, #e5e7eb 0%, #e5e7eb 50%, #fde047 50%, #fde047 100%);
 }
