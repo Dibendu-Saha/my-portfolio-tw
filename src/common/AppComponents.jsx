@@ -14,18 +14,18 @@ export const Header = ({ children, className, headerType = "" }) => {
 
 export const PageContent = ({ children }) => {
   return (
-    <div className="mt-5 flex flex-col gap-10 text-justify text-xs font-light leading-normal lg:mt-20 lg:flex-row lg:gap-10 lg:text-base lg:leading-relaxed lg:tracking-wide">
+    <div className="mt-5 flex flex-col gap-10 text-justify text-xs font-light leading-normal lg:mt-12 lg:flex-row lg:gap-10 lg:text-base lg:leading-relaxed lg:tracking-wide">
       {children}
     </div>
   );
 };
 
-export const LeftPane = ({ children }) => {
-  return <div className="w-full space-y-6 lg:space-y-8">{children}</div>;
+export const LeftPane = ({ children, className }) => {
+  return <div className={className ? `${className} w-full space-y-6 lg:space-y-8` : "w-full space-y-6 lg:space-y-8"}>{children}</div>;
 };
 
-export const RightPane = ({ children }) => {
-  return <div className="w-full">{children}</div>;
+export const RightPane = ({ children, className }) => {
+  return <div className={className ? `${className} w-full` : "w-full"}>{children}</div>;
 };
 
 export const IconCard = ({ imgSrc, altText, title, className }) => {
@@ -40,15 +40,14 @@ export const IconCard = ({ imgSrc, altText, title, className }) => {
 
 export const Button = ({ children, link }) => {
   return (
-    <Link to={link} className="bg-[#46351d] p-4 font-extralight text-white">
+    <Link to={link} className="bg-[#46351d] p-3 text-xs font-extralight text-white lg:p-4 lg:text-base">
       {children}
     </Link>
   );
 };
 
 export const Footer = ({ children }) => {
-  // return <div className="absolute bottom-16 left-[50%] translate-x-[-50%] lg:bottom-[80px]">{children}</div>;
-  return <div className="absolute bottom-[8%] left-[50%] translate-x-[-50%]">{children}</div>;
+  return <div className="fixed bottom-10 left-[50%] translate-x-[-50%] lg:bottom-16">{children}</div>;
 };
 
 // List of reusable components -

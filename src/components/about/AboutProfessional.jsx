@@ -49,7 +49,7 @@ const AboutProfessional = () => {
         </LeftPane>
 
         <RightPane>
-          <div className="grid grid-cols-4 gap-y-6">
+          <div className="grid grid-cols-4 lg:gap-y-6">
             <IconCard imgSrc={reactIcon} altText="react icon" title="React" />
             <IconCard imgSrc={reduxIcon} altText="redux icon" title="Redux" />
             <IconCard imgSrc={jsIcon} altText="javascript icon" title="JavaScipt" />
