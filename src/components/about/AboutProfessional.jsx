@@ -15,9 +15,7 @@ import dbIcon from "../../assets/img/icon-database.svg";
 const AboutProfessional = () => {
   return (
     <Container>
-      <Header headerType="" className="lg:text-7xl">
-        What I do?
-      </Header>
+      <Header className="lg:text-7xl">What I do?</Header>
 
       <PageContent>
         <LeftPane>

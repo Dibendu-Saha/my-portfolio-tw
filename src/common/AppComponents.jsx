@@ -13,22 +13,26 @@ export const Header = ({ children, className, headerType = "" }) => {
 };
 
 export const PageContent = ({ children }) => {
-  return <div className="mt-20 flex gap-10">{children}</div>;
+  return (
+    <div className="mt-5 text-justify text-xs font-light leading-normal lg:mt-20 lg:flex lg:gap-10 lg:text-base lg:leading-relaxed lg:tracking-wide">
+      {children}
+    </div>
+  );
 };
 
 export const LeftPane = ({ children }) => {
-  return <div className="w-full space-y-8 text-justify text-base font-light leading-relaxed tracking-wide">{children}</div>;
+  return <div className="w-full space-y-8">{children}</div>;
 };
 
 export const RightPane = ({ children }) => {
-  return <div className="w-full">{children}</div>;
+  return <div className="mt-10 w-full lg:mt-0">{children}</div>;
 };
 
 export const IconCard = ({ imgSrc, altText, title, className }) => {
   const cn = "flex flex-col items-center gap-2";
   return (
-    <div className={className ? `${className} ${cn}` : cn}>
-      <img src={imgSrc} alt={altText} className="peer size-24 transition-all duration-500 hover:-translate-y-4" />
+    <div className={className ? `${className} ${cn}` : "flex flex-col items-center gap-2"}>
+      <img src={imgSrc} alt={altText} className="peer size-12 transition-all duration-500 hover:-translate-y-4 lg:size-24" />
       <p className="opacity-0 transition-all duration-500 peer-hover:-translate-y-4 peer-hover:opacity-100">{title}</p>
     </div>
   );
