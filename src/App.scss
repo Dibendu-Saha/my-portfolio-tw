@@ -3,10 +3,13 @@
 .x-border-green { border: 1px solid green; }
 
 
-$primary-color: #d5c455;
-$primary-shade: #6b622b;
-$font-color: #454545;
-$secondary-color: #6b5d4a;
+// $primary-color: #d5c455;
+// $primary-shade: #6b622b;
+// $font-color: #454545;
+// $secondary-color: #6b5d4a;
+
+$gradient-tint: #e5e7eb;
+$gradient-shade: #fde047;
 
 
 body {
@@ -14,5 +17,9 @@ body {
 }
 
 .app-bg {
-    background-image: linear-gradient(90deg, #e5e7eb 0%, #e5e7eb 50%, #fde047 50%, #fde047 100%);
+    background-image: linear-gradient(90deg, $gradient-tint 0%, $gradient-tint 50%, $gradient-shade 50%, $gradient-shade 100%);
+}
+
+.bottom-blur {
+    background-image: linear-gradient(to top, #000, #fde047)
 }
