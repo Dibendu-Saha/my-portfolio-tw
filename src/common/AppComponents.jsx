@@ -3,16 +3,16 @@ import "../App.scss";
 import { header_type } from "./component-type";
 import { Link } from "react-router-dom";
 
-export const Container = ({ children, className }) => {
-  return <div className={`h-full ${className ?? ""}`}>{children}</div>;
-};
-
 export const PageContent = ({ children }) => {
   return (
     <div className="mt-5 flex flex-col gap-10 text-justify text-xs font-light leading-normal lg:mt-12 lg:flex-row lg:gap-10 lg:text-base lg:leading-relaxed lg:tracking-wide">
       {children}
     </div>
   );
+};
+
+export const Container = ({ children, className }) => {
+  return <div className={`h-full ${className ?? ""}`}>{children}</div>;
 };
 
 export const Heading = ({ children, className, headerType = "" }) => {
