@@ -1,12 +1,12 @@
 import React from "react";
-import { Button, Container, Footer, Header, LeftPane, PageContent, RightPane } from "../../common/AppComponents";
+import { Button, Container, Footer, Heading, LeftPane, PageContent, RightPane } from "../../common/AppComponents";
 
 const AboutPersonal = () => {
   return (
     <Container>
-      <Header headerType="" className="lg:text-7xl">
+      <Heading headerType="" className="lg:text-7xl">
         What's up!
-      </Header>
+      </Heading>
 
       <PageContent>
         <LeftPane>

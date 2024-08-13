@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Container, Footer, Header, IconCard, LeftPane, PageContent, RightPane } from "../../common/AppComponents";
+import { Button, Container, Footer, Heading, IconCard, LeftPane, PageContent, RightPane } from "../../common/AppComponents";
 import iconNewWindow from "../../assets/img/icon-new-window.png";
 import reactIcon from "../../assets/img/icon-react.svg";
 import reduxIcon from "../../assets/img/icon-redux.svg";
@@ -15,7 +15,7 @@ import dbIcon from "../../assets/img/icon-database.svg";
 const AboutProfessional = () => {
   return (
     <Container>
-      <Header className="lg:text-7xl">What I do?</Header>
+      <Heading className="lg:text-7xl">What I do?</Heading>
 
       <PageContent>
         <LeftPane>

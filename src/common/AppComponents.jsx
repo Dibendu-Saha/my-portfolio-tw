@@ -7,7 +7,7 @@ export const Container = ({ children, className }) => {
   return <div className={`h-full ${className ?? ""}`}>{children}</div>;
 };
 
-export const Header = ({ children, className, headerType = "" }) => {
+export const Heading = ({ children, className, headerType = "" }) => {
   const cn = className ?? "";
   return headerType === header_type.bold ? <h1 className={cn}>{children}</h1> : <h1 className={`${cn} font-thin`}>{children}</h1>;
 };
@@ -47,12 +47,12 @@ export const Button = ({ children, link }) => {
 };
 
 export const Footer = ({ children }) => {
-  return <div className="fixed bottom-10 left-[50%] translate-x-[-50%] lg:bottom-16">{children}</div>;
+  return <div className="fixed bottom-10 left-[50%] hidden translate-x-[-50%] md:block lg:bottom-16">{children}</div>;
 };
 
 // List of reusable components -
-// - Header
-// - Header light
+// - Heading
+// - Heading light
 // - Text
 // - Button
 // - Link

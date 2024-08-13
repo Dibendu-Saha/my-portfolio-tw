@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Container, Footer, Header } from "../../common/AppComponents";
+import { Button, Container, Footer, Heading } from "../../common/AppComponents";
 import { header_type } from "../../common/component-type";
 
 const Home = () => {
@@ -7,10 +7,10 @@ const Home = () => {
     <Container>
       <div className="md:gap-y-30 mt-20 flex flex-col items-center justify-center gap-20 md:grid md:grid-cols-2 md:justify-items-center md:gap-x-0">
         <div>
-          <Header className="lg:text-7xl" headerType={header_type.bold}>
+          <Heading className="lg:text-7xl" headerType={header_type.bold}>
             Hey there!
-          </Header>
-          <Header className="mt-6 lg:text-7xl">I'm Dibendu</Header>
+          </Heading>
+          <Heading className="mt-6 lg:text-7xl">I'm Dibendu</Heading>
         </div>
 
         <div className="col-start-2 row-start-2 flex flex-col items-center gap-1">
