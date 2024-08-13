@@ -9,17 +9,17 @@ import {
   PageContent,
   RightPane,
 } from "../../common/AppComponents";
-import iconNewWindow from "../../assets/img/icon-new-window.png";
-import reactIcon from "../../assets/img/icon-react.svg";
-import reduxIcon from "../../assets/img/icon-redux.svg";
-import jsIcon from "../../assets/img/icon-javascript.svg";
-import jqueryIcon from "../../assets/img/icon-jquery.svg";
-import htmlIcon from "../../assets/img/icon-html.svg";
-import cssIcon from "../../assets/img/icon-css3.svg";
-import dotNetIcon from "../../assets/img/icon-dotnet-core.svg";
-import cSharpIcon from "../../assets/img/icon-c-sharp.svg";
-import apiIcon from "../../assets/img/icon-api.svg";
-import dbIcon from "../../assets/img/icon-database.svg";
+import iconNewWindow from "../../assets/img/skills/icon-new-window.png";
+import reactIcon from "../../assets/img/skills/icon-react.svg";
+import reduxIcon from "../../assets/img/skills/icon-redux.svg";
+import jsIcon from "../../assets/img/skills/icon-javascript.svg";
+import jqueryIcon from "../../assets/img/skills/icon-jquery.svg";
+import htmlIcon from "../../assets/img/skills/icon-html.svg";
+import cssIcon from "../../assets/img/skills/icon-css3.svg";
+import dotNetIcon from "../../assets/img/skills/icon-dotnet-core.svg";
+import cSharpIcon from "../../assets/img/skills/icon-c-sharp.svg";
+import apiIcon from "../../assets/img/skills/icon-api.svg";
+import dbIcon from "../../assets/img/skills/icon-database.svg";
 
 const AboutProfessional = () => {
   return (

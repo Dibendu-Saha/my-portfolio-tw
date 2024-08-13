@@ -1,5 +1,5 @@
 import React from "react";
-import homeIcon from "../../assets/img/menu-home.svg";
+import homeIcon from "../../assets/img/menu/menu-home.svg";
 import { NavLink } from "react-router-dom";
 
 const Menu = () => {
