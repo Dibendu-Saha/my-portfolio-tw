@@ -1,3 +1,12 @@
+/*
+    ************* STANDARDS *************
+
+    PRIMARY COLOR: #d5c455 / yellow-300
+    SECONDARY COLOR: #6b5d4a / #574c3c
+
+*/
+
+
 .x-border { border: 1px solid; }
 .x-border-red { border: 1px solid red; }
 .x-border-green { border: 1px solid green; }
@@ -18,8 +27,4 @@ body {
 
 .app-bg {
     background-image: linear-gradient(90deg, $gradient-tint 0%, $gradient-tint 50%, $gradient-shade 50%, $gradient-shade 100%);
-}
-
-.bottom-blur {
-    background-image: linear-gradient(to top, #000, #fde047)
 }
