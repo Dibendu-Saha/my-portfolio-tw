@@ -7,17 +7,17 @@ export const Container = ({ children, className }) => {
   return <div className={`h-full ${className ?? ""}`}>{children}</div>;
 };
 
-export const Heading = ({ children, className, headerType = "" }) => {
-  const cn = className ?? "";
-  return headerType === header_type.bold ? <h1 className={cn}>{children}</h1> : <h1 className={`${cn} font-thin`}>{children}</h1>;
-};
-
 export const PageContent = ({ children }) => {
   return (
     <div className="mt-5 flex flex-col gap-10 text-justify text-xs font-light leading-normal lg:mt-12 lg:flex-row lg:gap-10 lg:text-base lg:leading-relaxed lg:tracking-wide">
       {children}
     </div>
   );
+};
+
+export const Heading = ({ children, className, headerType = "" }) => {
+  const cn = className ?? "";
+  return headerType === header_type.bold ? <h1 className={cn}>{children}</h1> : <h1 className={`${cn} font-thin`}>{children}</h1>;
 };
 
 export const LeftPane = ({ children, className }) => {
