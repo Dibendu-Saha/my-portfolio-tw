@@ -4,6 +4,7 @@ import AboutPersonal from "./components/about/AboutPersonal";
 import AboutProfessional from "./components/about/AboutProfessional";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
+import Menu from "./components/menu/Menu";
 
 const App = () => {
   return (
@@ -16,6 +17,8 @@ const App = () => {
           <Route path="/about-personal" element={<AboutPersonal />} />
           <Route path="/about-professional" element={<AboutProfessional />} />
         </Routes>
+
+        <Menu />
       </BrowserRouter>
     </div>
   );
