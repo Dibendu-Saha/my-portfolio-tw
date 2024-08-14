@@ -17,9 +17,9 @@ export const PageContent = ({ children }) => {
 export const Heading = ({ children, className, headerType = "" }) => {
   const cn = className ?? "";
   return headerType === header_type.bold ? (
-    <h1 className={cn}>{children}</h1>
+    <h1 className={`${cn} lg:text-7xl`}>{children}</h1>
   ) : (
-    <h1 className={`${cn} font-thin`}>{children}</h1>
+    <h1 className={`${cn} font-thin lg:text-7xl`}>{children}</h1>
   );
 };
 

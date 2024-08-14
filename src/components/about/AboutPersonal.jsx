@@ -4,9 +4,7 @@ import { Button, Container, Footer, Heading, LeftPane, PageContent, RightPane } 
 const AboutPersonal = () => {
   return (
     <Container>
-      <Heading headerType="" className="lg:text-7xl">
-        What's up!
-      </Heading>
+      <Heading>What's up!</Heading>
 
       <PageContent>
         <LeftPane>
