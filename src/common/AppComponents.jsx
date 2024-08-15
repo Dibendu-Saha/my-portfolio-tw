@@ -25,7 +25,9 @@ export const Heading = ({ children, className, headerType = "" }) => {
 
 export const LeftPane = ({ children, className }) => {
   return (
-    <div className={className ? `${className} w-full space-y-6 lg:space-y-8` : "w-full space-y-6 lg:space-y-8"}>
+    <div
+      className={className ? `${className} mt-2 w-full space-y-6 lg:space-y-8` : "mt-2 w-full space-y-6 lg:space-y-8"}
+    >
       {children}
     </div>
   );
