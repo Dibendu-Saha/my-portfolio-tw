@@ -1,6 +1,6 @@
 I've bootstrapped react projects both using 'create-react-app' as well as the plain and not-so-simple Webpack and Babel.
 
-While Facebook's 'create-react-app' is heavy on the initial installation and the overall package, setting up with webpack demands heavy focus on the setup.
+While Facebook's 'create-react-app' is heavy on the initial installation and the overall package, setting up with webpack demands heavy attention and time during the setup process.
 
 Hence,
 
