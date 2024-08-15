@@ -3,8 +3,9 @@ import Home from "./components/home/Home";
 import AboutPersonal from "./components/about/AboutPersonal";
 import AboutProfessional from "./components/about/AboutProfessional";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.scss";
 import Menu from "./components/menu/Menu";
+import Contact from "./components/contact/Contact";
+import "./App.scss";
 
 const App = () => {
   return (
@@ -13,7 +14,7 @@ const App = () => {
     <div className="mx-auto my-0 min-h-screen bg-gradient-to-r from-gray-200 to-yellow-300 px-10 py-10 md:px-20 md:py-20">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Contact />} />
           <Route path="/about-personal" element={<AboutPersonal />} />
           <Route path="/about-professional" element={<AboutProfessional />} />
         </Routes>
