@@ -1,9 +1,9 @@
 import React from "react";
-import { Container, Heading, LeftPane, PageContent, RightPane, TextInput } from "../../common/AppComponents";
+import { Button, Container, Heading, LeftPane, PageContent, RightPane, TextInput } from "../../common/AppComponents";
 
 const Contact = () => {
   return (
-    <Container>
+    <Container className="x-border-red">
       <Heading>Let's talk</Heading>
 
       <PageContent>
@@ -24,6 +24,8 @@ const Contact = () => {
             </label>
             <TextInput type="textarea" cols="10" rows="6" />
           </div>
+
+          <Button className="mt-2">Send</Button>
         </LeftPane>
 
         <RightPane className="x-border-red h-48"></RightPane>

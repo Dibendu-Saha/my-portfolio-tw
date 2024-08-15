@@ -57,9 +57,10 @@ export const TextInput = ({ name, cols, rows, type = "" }) => {
   );
 };
 
-export const Button = ({ children, link }) => {
+export const Button = ({ children, link, className }) => {
+  const cn = className ?? "";
   return (
-    <Link to={link} className="bg-[#46351d] p-3 text-xs font-extralight text-white lg:p-4 lg:text-base">
+    <Link to={link} className={`${cn} bg-[#46351d] p-3 text-xs font-extralight text-white lg:p-4 lg:text-base`.trim()}>
       {children}
     </Link>
   );
