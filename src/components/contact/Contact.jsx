@@ -8,18 +8,20 @@ const Contact = () => {
 
       <PageContent>
         <LeftPane>
+          <p className="lg:mb-12">Interested to know more? Send me a 'hi'...</p>
+
           <div className="grid max-w-[600px] grid-cols-[1fr_2fr] items-center gap-x-2 gap-y-5 md:gap-x-0">
-            <label htmlFor="name" className="text-base">
+            <label htmlFor="name" className="md:text-base">
               Name
             </label>
             <TextInput name="name" />
 
-            <label htmlFor="email" className="text-base">
+            <label htmlFor="email" className="md:text-base">
               Email
             </label>
             <TextInput name="email" />
 
-            <label htmlFor="message" className="text-base">
+            <label htmlFor="message" className="md:text-base">
               Message
             </label>
             <TextInput type="textarea" cols="10" rows="6" />

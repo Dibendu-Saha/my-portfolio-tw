@@ -8,7 +8,7 @@ export const Container = ({ children, className }) => {
 
 export const PageContent = ({ children }) => {
   return (
-    <div className="mt-5 flex flex-col gap-10 text-justify text-xs font-light leading-normal lg:mt-12 lg:flex-row lg:gap-10 lg:text-base lg:leading-relaxed lg:tracking-wide">
+    <div className="mt-5 flex flex-col gap-10 text-justify text-xs font-light leading-normal md:text-base lg:mt-12 lg:flex-row lg:gap-10 lg:leading-relaxed lg:tracking-wide">
       {children}
     </div>
   );
