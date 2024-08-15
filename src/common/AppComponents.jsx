@@ -6,6 +6,15 @@ export const Container = ({ children, className }) => {
   return <div className={`h-full ${className ?? ""}`}>{children}</div>;
 };
 
+export const Heading = ({ children, className, headerType = "" }) => {
+  const cn = className ?? "";
+  return headerType === header_type.bold ? (
+    <h1 className={`${cn} lg:text-7xl`.trim()}>{children}</h1>
+  ) : (
+    <h1 className={`${cn} font-thin lg:text-7xl`.trim()}>{children}</h1>
+  );
+};
+
 export const PageContent = ({ children }) => {
   return (
     <div className="mt-5 flex flex-col gap-10 text-justify text-xs font-light leading-normal md:text-base lg:mt-12 lg:flex-row lg:gap-10 lg:leading-relaxed lg:tracking-wide">
@@ -14,33 +23,17 @@ export const PageContent = ({ children }) => {
   );
 };
 
-export const Heading = ({ children, className, headerType = "" }) => {
-  const cn = className ?? "";
-  return headerType === header_type.bold ? (
-    <h1 className={`${cn} lg:text-7xl`}>{children}</h1>
-  ) : (
-    <h1 className={`${cn} font-thin lg:text-7xl`}>{children}</h1>
-  );
-};
-
 export const LeftPane = ({ children, className }) => {
-  return (
-    <div
-      className={className ? `${className} mt-2 w-full space-y-6 lg:space-y-8` : "mt-2 w-full space-y-6 lg:space-y-8"}
-    >
-      {children}
-    </div>
-  );
+  return <div className={`${className ?? ""} mt-2 w-full space-y-6 lg:space-y-8`.trim()}>{children}</div>;
 };
 
 export const RightPane = ({ children, className }) => {
-  return <div className={className ? `${className} w-full` : "w-full"}>{children}</div>;
+  return <div className={`${className ?? ""} w-full`.trim()}>{children}</div>;
 };
 
 export const IconCard = ({ imgSrc, altText, title, className }) => {
-  const cn = "flex flex-col items-center gap-2";
   return (
-    <div className={className ? `${className} ${cn}` : cn}>
+    <div className={`${className ?? ""} flex flex-col items-center gap-2`.trim()}>
       <img
         src={imgSrc}
         alt={altText}
