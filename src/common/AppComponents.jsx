@@ -49,6 +49,14 @@ export const IconCard = ({ imgSrc, altText, title, className }) => {
   );
 };
 
+export const TextInput = ({ name, cols, rows, type = "" }) => {
+  return type === "textarea" ? (
+    <textarea cols={cols} rows={rows} name="message" className="resize-none border border-gray-300" />
+  ) : (
+    <input type="text" name={name} className="h-8 border border-gray-300" />
+  );
+};
+
 export const Button = ({ children, link }) => {
   return (
     <Link to={link} className="bg-[#46351d] p-3 text-xs font-extralight text-white lg:p-4 lg:text-base">

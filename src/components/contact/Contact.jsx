@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Heading, LeftPane, PageContent, RightPane } from "../../common/AppComponents";
+import { Container, Heading, LeftPane, PageContent, RightPane, TextInput } from "../../common/AppComponents";
 
 const Contact = () => {
   return (
@@ -12,17 +12,17 @@ const Contact = () => {
             <label htmlFor="name" className="text-base">
               Name
             </label>
-            <input type="text" name="name" className="h-8" />
+            <TextInput name="name" />
 
             <label htmlFor="email" className="text-base">
               Email
             </label>
-            <input type="text" name="email" className="h-8" />
+            <TextInput name="email" />
 
             <label htmlFor="message" className="text-base">
               Message
             </label>
-            <textarea cols="10" rows="6" name="message" className="resize-none" />
+            <TextInput type="textarea" cols="10" rows="6" />
           </div>
         </LeftPane>
 
