@@ -22,14 +22,14 @@ const Menu = () => {
       </NavLink>
 
       <NavLink to="/">
-        <img src={xpIcon} className="size-6 -translate-y-0.5" alt="" />
+        <img src={xpIcon} className="size-6" alt="" />
       </NavLink>
 
       {/* <NavLink to="/">
         <img src={xpIcon} className="size-6" alt="" />
       </NavLink> */}
 
-      <NavLink to="/">
+      <NavLink to="/contact">
         <img src={contactIcon} className="size-6 scale-110" alt="" />
       </NavLink>
     </div>

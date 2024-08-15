@@ -3,12 +3,12 @@ import { Button, Container, Heading, LeftPane, PageContent, RightPane, TextInput
 
 const Contact = () => {
   return (
-    <Container className="x-border-red">
+    <Container>
       <Heading>Let's talk</Heading>
 
       <PageContent>
         <LeftPane>
-          <div className="grid max-w-[600px] grid-cols-[1fr_2fr] items-center gap-y-5">
+          <div className="grid max-w-[600px] grid-cols-[1fr_2fr] items-center gap-x-2 gap-y-5 md:gap-x-0">
             <label htmlFor="name" className="text-base">
               Name
             </label>
@@ -23,12 +23,12 @@ const Contact = () => {
               Message
             </label>
             <TextInput type="textarea" cols="10" rows="6" />
-          </div>
 
-          <Button className="mt-2">Send</Button>
+            <Button className="col-start-2 mt-2 text-center">Send</Button>
+          </div>
         </LeftPane>
 
-        <RightPane className="x-border-red h-48"></RightPane>
+        <RightPane className="h-48"></RightPane>
       </PageContent>
     </Container>
   );
