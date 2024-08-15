@@ -1,5 +1,18 @@
 import React from "react";
-import { Button, Container, Heading, LeftPane, PageContent, RightPane, TextInput } from "../../common/AppComponents";
+import linkedinIcon from "../../assets/img/contact/icon-linkedin.svg";
+import githubIcon from "../../assets/img/contact/icon-github.svg";
+import instagramIcon from "../../assets/img/contact/icon-instagram.svg";
+import fbIcon from "../../assets/img/contact/icon-facebook.svg";
+import {
+  Button,
+  Container,
+  Heading,
+  IconCard,
+  LeftPane,
+  PageContent,
+  RightPane,
+  TextInput,
+} from "../../common/AppComponents";
 
 const Contact = () => {
   return (
@@ -30,7 +43,24 @@ const Contact = () => {
           </div>
         </LeftPane>
 
-        <RightPane className="h-48"></RightPane>
+        <RightPane>
+          <p className="text-center text-3xl font-extralight">Follow me on...</p>
+
+          <div className="mt-16 flex justify-evenly">
+            <a href="">
+              <IconCard imgSrc={linkedinIcon} altText="Linkedin icon" />
+            </a>
+            <a href="">
+              <IconCard imgSrc={githubIcon} altText="Github icon" />
+            </a>
+            <a href="">
+              <IconCard imgSrc={instagramIcon} altText="Instagram icon" />
+            </a>
+            <a href="">
+              <IconCard imgSrc={fbIcon} altText="Facebook icon" />
+            </a>
+          </div>
+        </RightPane>
       </PageContent>
     </Container>
   );
