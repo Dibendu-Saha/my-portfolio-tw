@@ -15,9 +15,11 @@ export const Heading = ({ children, className, headerType = "" }) => {
   );
 };
 
-export const PageContent = ({ children }) => {
+export const PageContent = ({ children, className }) => {
   return (
-    <div className="mt-5 flex flex-col gap-10 text-justify text-xs font-light leading-normal md:text-base lg:mt-12 lg:flex-row lg:gap-10 lg:leading-relaxed lg:tracking-wide">
+    <div
+      className={`${className ?? ""} mt-5 flex flex-col gap-10 text-justify text-xs font-light leading-normal md:text-base lg:mt-12 lg:flex-row lg:gap-10 lg:leading-relaxed lg:tracking-wide`.trim()}
+    >
       {children}
     </div>
   );

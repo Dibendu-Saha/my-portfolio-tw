@@ -19,9 +19,10 @@ const Contact = () => {
     <Container>
       <Heading>Let's talk</Heading>
 
-      <PageContent>
+      <PageContent className="gap-14">
         <LeftPane>
-          <p className="lg:mb-12">Interested to know more? Send me a 'hi'...</p>
+          <p className="-mb-6 lg:-mb-7">Interested to know more?</p>
+          <p className="lg:mb-12">Send me a 'hi'...</p>
 
           <div className="grid max-w-[600px] grid-cols-[1fr_2fr] items-center gap-x-2 gap-y-5 md:gap-x-0">
             <label htmlFor="name" className="md:text-base">
@@ -46,17 +47,17 @@ const Contact = () => {
         <RightPane>
           <p className="text-center text-3xl font-extralight">Follow me on...</p>
 
-          <div className="mt-16 flex justify-evenly">
-            <a href="">
+          <div className="mt-5 flex justify-evenly md:mt-16">
+            <a href="https://www.linkedin.com/in/dibendu-saha/" target="_blank" rel="noreferrer">
               <IconCard imgSrc={linkedinIcon} altText="Linkedin icon" />
             </a>
-            <a href="">
+            <a href="https://github.com/Dibendu-Saha" target="_blank" rel="noreferrer">
               <IconCard imgSrc={githubIcon} altText="Github icon" />
             </a>
-            <a href="">
+            <a href="https://www.instagram.com/dibendu.s/" target="_blank" rel="noreferrer">
               <IconCard imgSrc={instagramIcon} altText="Instagram icon" />
             </a>
-            <a href="">
+            <a href="https://www.facebook.com/dibendu03" target="_blank" rel="noreferrer">
               <IconCard imgSrc={fbIcon} altText="Facebook icon" />
             </a>
           </div>
