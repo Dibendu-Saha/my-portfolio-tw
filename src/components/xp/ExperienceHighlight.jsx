@@ -27,20 +27,6 @@ const ExperienceHighlight = () => {
           </SummaryCard>
 
           <SummaryCard
-            employerLogo={wfLogo}
-            jobTitle="Technology Specialist"
-            startDate="April 2018"
-            endDate="August 2021"
-          >
-            <ul className="list-disc">
-              <li className="ml-4">
-                Revamped the bank&#39;s investment app dealing with money market funds, with a primary focus on
-                enhancing the UI/UX.
-              </li>
-            </ul>
-          </SummaryCard>
-
-          <SummaryCard
             employerLogo={teksystemsLogo}
             jobTitle="Application Developer"
             startDate="October 2021"
@@ -56,6 +42,20 @@ const ExperienceHighlight = () => {
                 This app proved to be a game-changer for the PMO team by automating the creation and oversight of
                 statements of work for client opportunities, encompassing resource allocation, costing and billing
                 details.
+              </li>
+            </ul>
+          </SummaryCard>
+
+          <SummaryCard
+            employerLogo={wfLogo}
+            jobTitle="Technology Specialist"
+            startDate="April 2018"
+            endDate="August 2021"
+          >
+            <ul className="list-disc">
+              <li className="ml-4">
+                Revamped the bank&#39;s investment app dealing with money market funds, with a primary focus on
+                enhancing the UI/UX.
               </li>
             </ul>
           </SummaryCard>

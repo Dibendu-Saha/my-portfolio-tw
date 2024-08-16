@@ -1,6 +1,6 @@
 const SummaryCard = ({ children, employerLogo, jobTitle, startDate, endDate, imgSize = "12", imageScale = "1" }) => {
   return (
-    <div className="flex min-h-40 items-start gap-2 rounded-xl bg-gradient-to-r from-[#6b5d4a] p-2">
+    <div className="flex min-h-36 items-start gap-2 rounded-xl bg-gradient-to-r from-[#6b5d4a] p-2">
       <div className="w-fit flex-shrink-0 rounded-full bg-slate-300 p-4">
         <img src={employerLogo} alt="Employer logo" className={`size-${imgSize} scale-[${imageScale}] md:size-16`} />
       </div>
