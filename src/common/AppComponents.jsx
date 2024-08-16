@@ -1,5 +1,5 @@
 import React from "react";
-import { heading_type } from "./component-type";
+import { heading_type } from "./app-constants";
 import { Link } from "react-router-dom";
 
 export const Container = ({ children, className }) => {

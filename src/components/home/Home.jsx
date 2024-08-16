@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Container, Footer, Heading } from "../../common/AppComponents";
-import { heading_type } from "../../common/component-type";
+import { heading_type, route } from "../../common/app-constants";
 
 const Home = () => {
   return (
@@ -24,7 +24,7 @@ const Home = () => {
       </div>
 
       <Footer>
-        <Button link="/about-personal">Let's Explore</Button>
+        <Button link={route.ABOUT_PERSONAL}>Let's Explore</Button>
       </Footer>
     </Container>
   );

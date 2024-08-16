@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Container, Footer, Heading, LeftPane, PageContent, RightPane } from "../../common/AppComponents";
+import { route } from "../../common/app-constants";
 
 const AboutPersonal = () => {
   return (
@@ -29,7 +30,7 @@ const AboutPersonal = () => {
       </PageContent>
 
       <Footer>
-        <Button link="/about-professional">Learn more</Button>
+        <Button link={route.ABOUT_PROFESSIONAL}>Learn more</Button>
       </Footer>
     </Container>
   );
