@@ -31,7 +31,7 @@ const ExperienceHighlight = () => {
             jobTitle="Application Developer"
             startDate="October 2021"
             endDate="November 2022"
-            imageScale="1.6"
+            imageScale="1.5"
           >
             <ul className="list-disc">
               <li className="ml-4">
