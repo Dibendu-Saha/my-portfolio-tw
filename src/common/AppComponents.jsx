@@ -9,9 +9,9 @@ export const Container = ({ children, className }) => {
 export const Heading = ({ children, className, headerType = "" }) => {
   const cn = className ?? "";
   return headerType === header_type.bold ? (
-    <h1 className={`${cn} lg:text-7xl`.trim()}>{children}</h1>
+    <h1 className={`${cn} md:text-6xl lg:text-7xl`.trim()}>{children}</h1>
   ) : (
-    <h1 className={`${cn} font-thin lg:text-7xl`.trim()}>{children}</h1>
+    <h1 className={`${cn} font-thin md:text-6xl lg:text-7xl`.trim()}>{children}</h1>
   );
 };
 
@@ -39,7 +39,7 @@ export const IconCard = ({ imgSrc, altText, title, className }) => {
       <img
         src={imgSrc}
         alt={altText}
-        className="peer size-12 transition-all duration-500 hover:-translate-y-4 lg:size-24"
+        className="peer size-12 transition-all duration-500 hover:-translate-y-4 md:size-20 lg:size-24"
       />
       <p className="opacity-0 transition-all duration-500 peer-hover:-translate-y-4 peer-hover:opacity-100">{title}</p>
     </div>
