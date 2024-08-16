@@ -9,6 +9,7 @@ import {
   PageContent,
   RightPane,
 } from "../../common/AppComponents";
+import { route } from "../../common/app-constants";
 import iconNewWindow from "../../assets/img/skills/icon-new-window.png";
 import reactIcon from "../../assets/img/skills/icon-react.svg";
 import reduxIcon from "../../assets/img/skills/icon-redux.svg";
@@ -83,7 +84,7 @@ const AboutProfessional = () => {
       </PageContent>
 
       <Footer>
-        <Button>See Work History</Button>
+        <Button link={route.XP}>See Work History</Button>
       </Footer>
     </Container>
   );
