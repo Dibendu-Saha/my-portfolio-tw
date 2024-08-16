@@ -3,6 +3,7 @@ import { Container, Heading, LeftPane, PageContent, RightPane } from "../../comm
 import natwestLogo from "../../assets/img/xp/natwest_logo.svg";
 import wfLogo from "../../assets/img/xp/wf_logo.svg";
 import teksystemsLogo from "../../assets/img/xp/tek_logo.svg";
+import downloadCvLogo from "../../assets/img/xp/icon-resume.png";
 import SummaryCard from "./SummaryCard";
 
 const ExperienceHighlight = () => {
@@ -61,6 +62,12 @@ const ExperienceHighlight = () => {
           </SummaryCard>
         </LeftPane>
       </PageContent>
+
+      <div className="fixed bottom-20 right-6">
+        <a href="">
+          <img src={downloadCvLogo} alt="" className="size-14 animate-bounce" />
+        </a>
+      </div>
     </Container>
   );
 };
