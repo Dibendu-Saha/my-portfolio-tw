@@ -1,4 +1,4 @@
-const SummaryCard = ({ employerLogo, jobTitle, startDate, endDate, children }) => {
+const SummaryCard = ({ children, employerLogo, jobTitle, startDate, endDate }) => {
   return (
     <div className="flex min-h-40 items-start gap-2 rounded-xl bg-gradient-to-r from-[#6b5d4a] p-2">
       <div className="w-fit flex-shrink-0 rounded-full bg-slate-300 p-4">
