@@ -1,13 +1,13 @@
 import React from "react";
 import { Button, Container, Footer, Heading } from "../../common/AppComponents";
-import { header_type } from "../../common/component-type";
+import { heading_type } from "../../common/component-type";
 
 const Home = () => {
   return (
     <Container>
       <div className="md:gap-y-30 mt-20 flex flex-col items-center justify-center gap-20 md:grid md:grid-cols-2 md:justify-items-center md:gap-x-0">
         <div>
-          <Heading headerType={header_type.bold}>Hey there!</Heading>
+          <Heading type={heading_type.bold}>Hey there!</Heading>
           <Heading className="mt-6">I'm Dibendu</Heading>
         </div>
 

@@ -1,3 +1,3 @@
-export const header_type = {
+export const heading_type = {
     bold: 'bold',
 }

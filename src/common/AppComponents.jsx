@@ -1,14 +1,14 @@
 import React from "react";
-import { header_type } from "./component-type";
+import { heading_type } from "./component-type";
 import { Link } from "react-router-dom";
 
 export const Container = ({ children, className }) => {
   return <div className={`h-full ${className ?? ""}`}>{children}</div>;
 };
 
-export const Heading = ({ children, className, headerType = "" }) => {
+export const Heading = ({ children, className, type = "" }) => {
   const cn = className ?? "";
-  return headerType === header_type.bold ? (
+  return type === heading_type.bold ? (
     <h1 className={`${cn} md:text-6xl lg:text-7xl`.trim()}>{children}</h1>
   ) : (
     <h1 className={`${cn} font-thin md:text-6xl lg:text-7xl`.trim()}>{children}</h1>
