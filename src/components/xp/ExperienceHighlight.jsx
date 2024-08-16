@@ -15,11 +15,11 @@ const ExperienceHighlight = () => {
         <LeftPane>
           <SummaryCard
             employerLogo={natwestLogo}
-            jobTitle="Software Engineer B8"
+            jobTitle="Software Engineer"
             startDate="December 2022"
             endDate="Present"
           >
-            <ul className="mt-1 list-disc space-y-2 text-left text-slate-800">
+            <ul className="list-disc space-y-2">
               <li className="ml-4">Working on delivering new features for the bank's FX trading platform.</li>
               <li className="ml-4">Worked on the bank's internal app store.</li>
             </ul>
@@ -31,10 +31,10 @@ const ExperienceHighlight = () => {
             startDate="April 2018"
             endDate="August 2021"
           >
-            <ul className="mt-1 list-disc space-y-2 text-left text-slate-800">
+            <ul className="list-disc">
               <li className="ml-4">
-                Redesigned &amp; revamped the bank&#39;s investment application dealing with money market funds, with a
-                primary focus on enhancing the UI/UX.
+                Redesigned &amp; revamped the bank&#39;s investment app dealing with money market funds, with a primary
+                focus on enhancing the UI/UX.
               </li>
             </ul>
           </SummaryCard>
