@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Heading, IconCard, LeftPane, PageContent, RightPane } from "../../common/AppComponents";
+import { Container, Heading, LeftPane, PageContent, RightPane } from "../../common/AppComponents";
 import natwestLogo from "../../assets/img/xp/natwest_logo.svg";
 import SummaryCard from "./SummaryCard";
 
@@ -9,11 +9,6 @@ const ExperienceHighlight = () => {
       <Heading>
         Experience <span className="hidden md:block">Highlight</span>
       </Heading>
-
-      {/* <PageContent className="!flex !flex-row gap-2">
-        <div className="x-border-red mt-2 size-36"></div>
-        <div className="x-border-red mt-2 size-36"></div>
-      </PageContent> */}
 
       <PageContent>
         <LeftPane>
