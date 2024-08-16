@@ -9,7 +9,7 @@ const ExperienceHighlight = () => {
   return (
     <Container>
       <Heading>
-        Experience <span className="hidden md:block">Highlight</span>
+        Experience <span className="hidden md:inline-block">Highlight</span>
       </Heading>
 
       <PageContent>
