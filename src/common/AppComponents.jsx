@@ -9,9 +9,13 @@ export const Container = ({ children, className }) => {
 export const Heading = ({ children, className, type = "" }) => {
   const cn = className ?? "";
   return type === heading_type.bold ? (
-    <h1 className={`${cn} md:text-6xl lg:text-7xl`.trim()}>{children}</h1>
+    <h1 className={`${cn} min-h-[82px] overflow-hidden whitespace-nowrap md:text-6xl lg:text-7xl`.trim()}>
+      {children}
+    </h1>
   ) : (
-    <h1 className={`${cn} font-thin md:text-6xl lg:text-7xl`.trim()}>{children}</h1>
+    <h1 className={`${cn} min-h-[82px] overflow-hidden whitespace-nowrap font-thin md:text-6xl lg:text-7xl`.trim()}>
+      {children}
+    </h1>
   );
 };
 

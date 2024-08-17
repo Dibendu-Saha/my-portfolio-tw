@@ -5,7 +5,7 @@ import { route } from "../../common/app-constants";
 const AboutPersonal = () => {
   return (
     <Container>
-      <Heading>What's up!</Heading>
+      <Heading className="animate-typing">What's up!</Heading>
 
       <PageContent>
         <LeftPane>
