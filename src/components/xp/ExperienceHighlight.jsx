@@ -63,6 +63,15 @@ const ExperienceHighlight = () => {
               </li>
             </ul>
           </SummaryCard>
+
+          <SummaryCard
+            employerLogo={downloadCvLogo}
+            jobTitle="Download CV"
+            className="mt-6 hidden md:flex lg:mt-8"
+            logoClassName="animate-swing"
+          >
+            <p>Download my CV to know more...</p>
+          </SummaryCard>
         </RightPane>
       </PageContent>
 
@@ -70,9 +79,9 @@ const ExperienceHighlight = () => {
         <Button link={route.CONTACT}>Let's talk?</Button>
       </Footer>
 
-      <div className="fixed bottom-20 right-6">
+      <div className="fixed bottom-20 right-6 md:hidden">
         <a href="">
-          <img src={downloadCvLogo} alt="" className="size-14 animate-bounce" />
+          <img src={downloadCvLogo} alt="" className="animate-swing size-14" />
         </a>
       </div>
     </Container>
