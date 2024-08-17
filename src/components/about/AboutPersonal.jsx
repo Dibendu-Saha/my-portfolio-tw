@@ -10,20 +10,20 @@ const AboutPersonal = () => {
       <PageContent>
         <LeftPane>
           <p>
-            Hi, I'm <strong>Dibendu Saha</strong>. I'm from the northeast Indian state of Assam and currently based in
-            Bangalore.
+            Hi, I'm <strong>Dibendu Saha</strong>. Originally from the northeastern state of Assam, I now call Bangalore
+            home.
           </p>
 
           <p>
-            I speak four languages &#8212; English, Hindi, Assamese and Bengali being my native-tongue. Enjoy cooking
-            and trying out recipes for my loved ones, as I believe nothing else can touch a soul more than wholesome
-            foods.
+            I'm fluent in four languages &#8212; English, Hindi, Assamese and Bengali, my native tongue. I have a
+            passion for cooking and love experimenting with new recipes for my loved ones, believing that nothing
+            touches the soul quite like wholesome food.
           </p>
 
           <p>
-            I love travelling (...I mean who doesn't), am a photography enthusiast and into biking and occasionally
-            nowhere to be found on weekends. I'm also part of a professional rider's groups. So, I'm always in for both
-            solo trips and group rides.
+            Traveling is one of my greatest joys (like who doesn't love it?), and I'm an avid photography enthusiast. I
+            also enjoy biking and occasionally nowhere to be found on weekends. I'm also part of a professional rider's
+            groups. So, I'm always in for both solo trips and group rides.
           </p>
         </LeftPane>
         <RightPane></RightPane>
