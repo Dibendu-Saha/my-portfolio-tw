@@ -1,10 +1,11 @@
 import React from "react";
-import { Container, Heading, LeftPane, PageContent, RightPane } from "../../common/AppComponents";
+import { Button, Container, Footer, Heading, LeftPane, PageContent, RightPane } from "../../common/AppComponents";
 import natwestLogo from "../../assets/img/xp/natwest_logo.svg";
 import wfLogo from "../../assets/img/xp/wf_logo.svg";
 import teksystemsLogo from "../../assets/img/xp/tek_logo.svg";
 import downloadCvLogo from "../../assets/img/xp/icon-resume.png";
 import SummaryCard from "./SummaryCard";
+import { route } from "../../common/app-constants";
 
 const ExperienceHighlight = () => {
   return (
@@ -64,6 +65,10 @@ const ExperienceHighlight = () => {
           </SummaryCard>
         </RightPane>
       </PageContent>
+
+      <Footer>
+        <Button link={route.CONTACT}>Let's talk?</Button>
+      </Footer>
 
       <div className="fixed bottom-20 right-6">
         <a href="">
