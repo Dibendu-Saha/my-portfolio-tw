@@ -21,9 +21,7 @@ const SummaryCard = ({
         <p className="text-slate-800">
           <strong>{jobTitle}</strong>
         </p>
-        <p className="text-left text-slate-800 opacity-70">
-          {startDate} - {endDate}
-        </p>
+        <p className="text-left text-slate-800 opacity-70">{startDate && endDate ? `${startDate} - ${endDate}` : ""}</p>
 
         <div className="mt-1 line-clamp-4 text-left leading-4 text-slate-800 md:leading-normal">{children}</div>
       </div>
