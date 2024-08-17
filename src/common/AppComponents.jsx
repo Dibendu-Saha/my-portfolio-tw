@@ -57,7 +57,10 @@ export const TextInput = ({ name, cols, rows, type = "" }) => {
 export const Button = ({ children, link, className }) => {
   const cn = className ?? "";
   return (
-    <Link to={link} className={`${cn} bg-[#46351d] p-3 text-xs font-extralight text-white lg:p-4 lg:text-base`.trim()}>
+    <Link
+      to={link}
+      className={`${cn} bg-[#46351d] p-3 text-xs font-extralight text-white transition-all duration-200 hover:bg-[#332615] hover:shadow-lg lg:p-4 lg:text-base`.trim()}
+    >
       {children}
     </Link>
   );
