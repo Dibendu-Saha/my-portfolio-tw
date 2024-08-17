@@ -19,7 +19,7 @@ const Contact = () => {
     <Container>
       <Heading>Let's talk</Heading>
 
-      <PageContent className="gap-14">
+      <PageContent className="md:gap-14">
         <LeftPane>
           <p className="-mb-6 lg:-mb-7">Interested to know more?</p>
           <p className="lg:mb-12">Send me a 'hi'...</p>

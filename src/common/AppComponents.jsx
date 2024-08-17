@@ -30,7 +30,7 @@ export const LeftPane = ({ children, className }) => {
 };
 
 export const RightPane = ({ children, className }) => {
-  return <div className={`${className ?? ""} w-full`.trim()}>{children}</div>;
+  return <div className={`${className ?? ""} mt-2 w-full`.trim()}>{children}</div>;
 };
 
 export const IconCard = ({ imgSrc, altText, title, className }) => {
