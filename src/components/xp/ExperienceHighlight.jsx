@@ -13,7 +13,7 @@ const ExperienceHighlight = () => {
         Experience <span className="hidden md:inline-block">Highlight</span>
       </Heading>
 
-      <PageContent>
+      <PageContent className="gap-4">
         <LeftPane>
           <SummaryCard
             employerLogo={natwestLogo}
@@ -46,7 +46,9 @@ const ExperienceHighlight = () => {
               </li>
             </ul>
           </SummaryCard>
+        </LeftPane>
 
+        <RightPane>
           <SummaryCard
             employerLogo={wfLogo}
             jobTitle="Technology Specialist"
@@ -60,7 +62,7 @@ const ExperienceHighlight = () => {
               </li>
             </ul>
           </SummaryCard>
-        </LeftPane>
+        </RightPane>
       </PageContent>
 
       <div className="fixed bottom-20 right-6">
