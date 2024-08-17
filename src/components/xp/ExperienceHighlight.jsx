@@ -69,6 +69,7 @@ const ExperienceHighlight = () => {
             jobTitle="Download CV"
             className="mt-6 hidden md:flex lg:mt-8"
             logoClassName="animate-swing"
+            actionable={true}
           >
             <p>Download my CV to know more...</p>
           </SummaryCard>
