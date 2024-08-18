@@ -8,11 +8,11 @@ export default {
           '0%, 100%': { transform: 'translateY(-3px)' },
           '50%': { transform: 'translateY(3px)' }
         },
-        typing: {
+        type: {
           'from': { width: '0' },
           'to': {  width: '100%' }
         },
-        'typing-fast': {
+        'type-fast': {
           'from': { width: '0' },
           'to': {  width: '100%' }
         },
@@ -49,8 +49,8 @@ export default {
       },
       animation: {
         swing: 'swing 2s ease-in-out infinite',
-        typing: 'typing 3.5s steps(100, end)',
-        'typing-fast': 'typing-fast 1.5s steps(100, end)',
+        type: 'type 3.5s steps(100, end)',
+        'type-fast': 'type-fast 1.5s steps(100, end)',
         'reveal-right': 'reveal-right 1s ease-out',
         'reveal-left': 'reveal-left 1s ease-out',
         'reveal-up': 'reveal-up 1s ease-out'

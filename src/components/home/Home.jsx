@@ -10,7 +10,7 @@ const Home = () => {
           <Heading className="animate-reveal-right" type={heading_type.bold}>
             Hey there!
           </Heading>
-          <Heading className="animate-typing-fast mt-6">I'm Dibendu</Heading>
+          <Heading className="animate-type-fast mt-6">I'm Dibendu</Heading>
         </div>
 
         <div className="animate-reveal-left col-start-2 row-start-2 flex flex-col items-center gap-1">
