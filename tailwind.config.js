@@ -12,6 +12,10 @@ export default {
           'from': { width: '0' },
           'to': {  width: '100%' }
         },
+        'typing-fast': {
+          'from': { width: '0' },
+          'to': {  width: '100%' }
+        },
         'reveal-right': {
           '0%': { 
             transform: 'translateX(-24px)',
@@ -45,7 +49,8 @@ export default {
       },
       animation: {
         swing: 'swing 2s ease-in-out infinite',
-        typing: 'typing 3.5s steps(85, end)',
+        typing: 'typing 3.5s steps(100, end)',
+        'typing-fast': 'typing-fast 1.5s steps(100, end)',
         'reveal-right': 'reveal-right 1s ease-out',
         'reveal-left': 'reveal-left 1s ease-out',
         'reveal-up': 'reveal-up 1s ease-out'
