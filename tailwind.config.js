@@ -41,8 +41,6 @@ export default {
         swing: 'swing 2s ease-in-out infinite',
         type: 'type 3.5s steps(100, end)',
         'type-fast': 'type-fast 1.8s steps(100, end)',
-        'reveal-right': 'reveal-right 1s ease-out',
-        'reveal-left': 'reveal-left 1s ease-out',
         'reveal-up': 'reveal-up 1s ease-out'
       }
     },
