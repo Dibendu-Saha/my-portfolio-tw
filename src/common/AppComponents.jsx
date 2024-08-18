@@ -32,11 +32,15 @@ export const PageContent = ({ children, className }) => {
 };
 
 export const LeftPane = ({ children, className }) => {
-  return <div className={`${className ?? ""} mt-2 w-full space-y-6 lg:space-y-8`.trim()}>{children}</div>;
+  return (
+    <div className={`${className ?? ""} animate-reveal-right mt-2 w-full space-y-6 lg:space-y-8`.trim()}>
+      {children}
+    </div>
+  );
 };
 
 export const RightPane = ({ children, className }) => {
-  return <div className={`${className ?? ""} mt-2 w-full`.trim()}>{children}</div>;
+  return <div className={`${className ?? ""} animate-reveal-left mt-2 w-full`.trim()}>{children}</div>;
 };
 
 export const IconCard = ({ imgSrc, altText, title, className }) => {
@@ -73,7 +77,11 @@ export const Button = ({ children, link, className }) => {
 };
 
 export const Footer = ({ children }) => {
-  return <div className="fixed bottom-10 left-[50%] hidden translate-x-[-50%] md:block lg:bottom-16">{children}</div>;
+  return (
+    <div className="animate-reveal-up fixed bottom-10 left-[50%] hidden translate-x-[-50%] md:block lg:bottom-16">
+      {children}
+    </div>
+  );
 };
 
 // List of reusable components -
