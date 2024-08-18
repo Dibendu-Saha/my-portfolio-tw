@@ -16,26 +16,6 @@ export default {
           'from': { width: '0' },
           'to': {  width: '100%' }
         },
-        'reveal-right': {
-          '0%': { 
-            transform: 'translateX(-24px)',
-            opacity: '0'
-           },
-          '100%': { 
-            transform: 'translateX(0)',
-            opacity: '1'
-           }
-        },
-        'reveal-left': {
-          '0%': { 
-            transform: 'translateX(24px)',
-            opacity: '0'
-           },
-          '100%': { 
-            transform: 'translateX(0)',
-            opacity: '1'
-           }
-        },
         'reveal-up': {
           'from': { 
             transform: 'translate(-50%, 24px)',
@@ -45,17 +25,29 @@ export default {
             transform: 'translate(-50%, 0)',
             opacity: '1'
            }
-        }
+        },
+        'reveal-icons-left': {
+          '0%': { 
+            transform: 'translateX(24px)',
+            opacity: '0'
+           },
+          '100%': { 
+            transform: 'translateX(0)',
+            opacity: '1'
+           }
+        },
       },
       animation: {
         swing: 'swing 2s ease-in-out infinite',
         type: 'type 3.5s steps(100, end)',
-        'type-fast': 'type-fast 1.5s steps(100, end)',
+        'type-fast': 'type-fast 1.8s steps(100, end)',
         'reveal-right': 'reveal-right 1s ease-out',
         'reveal-left': 'reveal-left 1s ease-out',
         'reveal-up': 'reveal-up 1s ease-out'
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated')
+  ],
 };
