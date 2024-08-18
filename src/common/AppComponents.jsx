@@ -24,7 +24,7 @@ export const Heading = ({ children, className, type = "" }) => {
 export const PageContent = ({ children, className }) => {
   return (
     <div
-      className={`${className ?? ""} mt-5 flex flex-col gap-10 text-justify text-xs font-light leading-normal md:text-base lg:mt-12 lg:flex-row lg:gap-10 lg:leading-relaxed lg:tracking-wide`.trim()}
+      className={`${className ?? ""} flex flex-col gap-10 text-justify text-xs font-light leading-normal md:text-base lg:mt-12 lg:flex-row lg:gap-10 lg:leading-relaxed lg:tracking-wide`.trim()}
     >
       {children}
     </div>
@@ -33,14 +33,14 @@ export const PageContent = ({ children, className }) => {
 
 export const LeftPane = ({ children, className }) => {
   return (
-    <div className={`${className ?? ""} animate-reveal-right mt-2 w-full space-y-6 lg:space-y-8`.trim()}>
+    <div className={`${className ?? ""} animate-reveal-right w-full space-y-6 lg:mt-2 lg:space-y-8`.trim()}>
       {children}
     </div>
   );
 };
 
 export const RightPane = ({ children, className }) => {
-  return <div className={`${className ?? ""} animate-reveal-left mt-2 w-full`.trim()}>{children}</div>;
+  return <div className={`${className ?? ""} animate-reveal-left w-full lg:mt-2`.trim()}>{children}</div>;
 };
 
 export const IconCard = ({ imgSrc, altText, title, className }) => {
