@@ -55,6 +55,7 @@ const AboutProfessional = () => {
             <IconCard className="animate-fade-left animate-delay-[0.2s]" imgSrc={reduxIcon} altText="redux icon" title="Redux" />
             <IconCard className="animate-fade-left animate-delay-[0.4s]" imgSrc={jsIcon} altText="javascript icon" title="JavaScipt" />
             <IconCard className="animate-fade-left animate-delay-[0.6s]" imgSrc={jqueryIcon} altText="jquery icon" title="jQuery" />
+
             <IconCard className="animate-fade-left animate-delay-[0.8s]" imgSrc={htmlIcon} altText="html icon" title="HTML" />
             <IconCard className="animate-fade-left animate-delay-[1s]" imgSrc={cssIcon} altText="css icon" title="CSS" />
             <IconCard className="animate-fade-left animate-delay-[1.2s]" imgSrc={dotNetIcon} altText="dot net core icon" title=".NET Core" />
