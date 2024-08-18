@@ -9,15 +9,9 @@ export const Container = ({ children, className }) => {
 export const Heading = ({ children, className, type = "" }) => {
   const cn = className ?? "";
   return type === heading_type.bold ? (
-    <h1 className={`${cn} min-h-[82px] overflow-hidden whitespace-nowrap md:text-6xl lg:text-7xl`.trim()}>
-      {children}
-    </h1>
+    <h1 className={`${cn} min-h-[82px] overflow-hidden whitespace-nowrap md:text-6xl lg:text-7xl`.trim()}>{children}</h1>
   ) : (
-    <h1
-      className={`${cn} animate-type min-h-[82px] overflow-hidden whitespace-nowrap font-thin md:text-6xl lg:text-7xl`.trim()}
-    >
-      {children}
-    </h1>
+    <h1 className={`${cn} animate-type min-h-[82px] overflow-hidden whitespace-nowrap font-thin md:text-6xl lg:text-7xl`.trim()}>{children}</h1>
   );
 };
 
@@ -32,25 +26,17 @@ export const PageContent = ({ children, className }) => {
 };
 
 export const LeftPane = ({ children, className }) => {
-  return (
-    <div className={`${className ?? ""} animate-reveal-right w-full space-y-6 lg:mt-2 lg:space-y-8`.trim()}>
-      {children}
-    </div>
-  );
+  return <div className={`${className ?? ""} animate-fade-right w-full space-y-6 lg:mt-2 lg:space-y-8`.trim()}>{children}</div>;
 };
 
 export const RightPane = ({ children, className }) => {
-  return <div className={`${className ?? ""} animate-reveal-left w-full lg:mt-2`.trim()}>{children}</div>;
+  return <div className={`${className ?? ""} animate-fade-left w-full lg:mt-2`.trim()}>{children}</div>;
 };
 
 export const IconCard = ({ imgSrc, altText, title, className }) => {
   return (
     <div className={`${className ?? ""} flex flex-col items-center gap-2`.trim()}>
-      <img
-        src={imgSrc}
-        alt={altText}
-        className="peer size-12 transition-all duration-500 hover:-translate-y-4 md:size-20 lg:size-24"
-      />
+      <img src={imgSrc} alt={altText} className="peer size-12 transition-all duration-500 hover:-translate-y-4 md:size-20 lg:size-24" />
       <p className="opacity-0 transition-all duration-500 peer-hover:-translate-y-4 peer-hover:opacity-100">{title}</p>
     </div>
   );
@@ -77,11 +63,7 @@ export const Button = ({ children, link, className }) => {
 };
 
 export const Footer = ({ children }) => {
-  return (
-    <div className="animate-reveal-up fixed bottom-10 left-[50%] hidden translate-x-[-50%] md:block lg:bottom-16">
-      {children}
-    </div>
-  );
+  return <div className="animate-reveal-up fixed bottom-10 left-[50%] hidden translate-x-[-50%] md:block lg:bottom-16">{children}</div>;
 };
 
 // List of reusable components -
