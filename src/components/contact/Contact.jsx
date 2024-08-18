@@ -3,16 +3,7 @@ import linkedinIcon from "../../assets/img/contact/icon-linkedin.svg";
 import githubIcon from "../../assets/img/contact/icon-github.svg";
 import instagramIcon from "../../assets/img/contact/icon-instagram.svg";
 import fbIcon from "../../assets/img/contact/icon-facebook.svg";
-import {
-  Button,
-  Container,
-  Heading,
-  IconCard,
-  LeftPane,
-  PageContent,
-  RightPane,
-  TextInput,
-} from "../../common/AppComponents";
+import { Button, Container, Heading, IconCard, LeftPane, PageContent, RightPane, TextInput } from "../../common/AppComponents";
 
 const Contact = () => {
   return (
@@ -48,16 +39,16 @@ const Contact = () => {
           <p className="text-center text-3xl font-extralight">Follow me on...</p>
 
           <div className="mt-5 flex justify-evenly md:mt-16">
-            <a href="https://www.linkedin.com/in/dibendu-saha/" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/dibendu-saha/" target="_blank" rel="noreferrer" className="animate-fade-left">
               <IconCard imgSrc={linkedinIcon} altText="Linkedin icon" />
             </a>
-            <a href="https://github.com/Dibendu-Saha" target="_blank" rel="noreferrer">
+            <a href="https://github.com/Dibendu-Saha" target="_blank" rel="noreferrer" className="animate-fade-left animate-delay-[0.4s]">
               <IconCard imgSrc={githubIcon} altText="Github icon" />
             </a>
-            <a href="https://www.instagram.com/dibendu.s/" target="_blank" rel="noreferrer">
+            <a href="https://www.instagram.com/dibendu.s/" target="_blank" rel="noreferrer" className="animate-fade-left animate-delay-[0.8s]">
               <IconCard imgSrc={instagramIcon} altText="Instagram icon" />
             </a>
-            <a href="https://www.facebook.com/dibendu03" target="_blank" rel="noreferrer">
+            <a href="https://www.facebook.com/dibendu03" target="_blank" rel="noreferrer" className="animate-fade-left animate-delay-[1.2s]">
               <IconCard imgSrc={fbIcon} altText="Facebook icon" />
             </a>
           </div>

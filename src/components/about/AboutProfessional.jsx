@@ -51,6 +51,7 @@ const AboutProfessional = () => {
 
         <RightPane>
           <div className="grid grid-cols-4 lg:gap-y-6">
+            {/* animate-[reveal-icons-left_1s_ease-out_1s] TO BE INVESTIGATED LATER */}
             <IconCard className="animate-fade-left" imgSrc={reactIcon} altText="react icon" title="React" />
             <IconCard className="animate-fade-left animate-delay-[0.2s]" imgSrc={reduxIcon} altText="redux icon" title="Redux" />
             <IconCard className="animate-fade-left animate-delay-[0.4s]" imgSrc={jsIcon} altText="javascript icon" title="JavaScipt" />
