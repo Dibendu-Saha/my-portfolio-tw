@@ -10,7 +10,7 @@ import { route } from "../../common/app-constants";
 const ExperienceHighlight = () => {
   return (
     <Container>
-      <Heading className="animate-typing">
+      <Heading>
         Experience <span className="hidden md:inline-block">Highlight</span>
       </Heading>
 

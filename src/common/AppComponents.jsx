@@ -13,7 +13,9 @@ export const Heading = ({ children, className, type = "" }) => {
       {children}
     </h1>
   ) : (
-    <h1 className={`${cn} min-h-[82px] overflow-hidden whitespace-nowrap font-thin md:text-6xl lg:text-7xl`.trim()}>
+    <h1
+      className={`${cn} animate-typing min-h-[82px] overflow-hidden whitespace-nowrap font-thin md:text-6xl lg:text-7xl`.trim()}
+    >
       {children}
     </h1>
   );

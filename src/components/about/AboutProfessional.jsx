@@ -25,7 +25,7 @@ import dbIcon from "../../assets/img/skills/icon-database.svg";
 const AboutProfessional = () => {
   return (
     <Container>
-      <Heading className="animate-typing">What I do?</Heading>
+      <Heading>What I do?</Heading>
 
       <PageContent>
         <LeftPane>

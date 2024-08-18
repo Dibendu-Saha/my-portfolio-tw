@@ -17,7 +17,7 @@ import {
 const Contact = () => {
   return (
     <Container>
-      <Heading className="animate-typing">Let's talk</Heading>
+      <Heading>Let's talk</Heading>
 
       <PageContent className="md:gap-14">
         <LeftPane>
