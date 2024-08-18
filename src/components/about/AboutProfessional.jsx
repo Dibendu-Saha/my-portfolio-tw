@@ -52,18 +52,18 @@ const AboutProfessional = () => {
         <RightPane>
           <div className="grid grid-cols-4 lg:gap-y-6">
             {/* animate-[reveal-icons-left_1s_ease-out_1s] TO BE INVESTIGATED LATER */}
-            <IconCard className="animate-fade-left" imgSrc={reactIcon} altText="react icon" title="React" />
-            <IconCard className="animate-fade-left animate-delay-[0.2s]" imgSrc={reduxIcon} altText="redux icon" title="Redux" />
-            <IconCard className="animate-fade-left animate-delay-[0.4s]" imgSrc={jsIcon} altText="javascript icon" title="JavaScipt" />
-            <IconCard className="animate-fade-left animate-delay-[0.6s]" imgSrc={jqueryIcon} altText="jquery icon" title="jQuery" />
+            <IconCard imgSrc={reactIcon} altText="react icon" title="React" />
+            <IconCard className="animate-delay-[0.2s]" imgSrc={reduxIcon} altText="redux icon" title="Redux" />
+            <IconCard className="animate-delay-[0.4s]" imgSrc={jsIcon} altText="javascript icon" title="JavaScipt" />
+            <IconCard className="animate-delay-[0.6s]" imgSrc={jqueryIcon} altText="jquery icon" title="jQuery" />
 
-            <IconCard className="animate-fade-left animate-delay-[0.8s]" imgSrc={htmlIcon} altText="html icon" title="HTML" />
-            <IconCard className="animate-fade-left animate-delay-[1s]" imgSrc={cssIcon} altText="css icon" title="CSS" />
-            <IconCard className="animate-fade-left animate-delay-[1.2s]" imgSrc={dotNetIcon} altText="dot net core icon" title=".NET Core" />
-            <IconCard className="animate-fade-left animate-delay-[1.4s]" imgSrc={cSharpIcon} altText="c sharp icon" title="C#" />
+            <IconCard className="animate-delay-[0.8s]" imgSrc={htmlIcon} altText="html icon" title="HTML" />
+            <IconCard className="animate-delay-[1s]" imgSrc={cssIcon} altText="css icon" title="CSS" />
+            <IconCard className="animate-delay-[1.2s]" imgSrc={dotNetIcon} altText="dot net core icon" title=".NET Core" />
+            <IconCard className="animate-delay-[1.4s]" imgSrc={cSharpIcon} altText="c sharp icon" title="C#" />
 
-            <IconCard className="animate-fade-left animate-delay-[1.6s] col-start-2" imgSrc={apiIcon} altText="api icon" title="Web API" />
-            <IconCard className="animate-fade-left animate-delay-[1.8s] col-start-3" imgSrc={dbIcon} altText="database icon" title="SQL Server" />
+            <IconCard className="animate-delay-[1.6s] col-start-2" imgSrc={apiIcon} altText="api icon" title="Web API" />
+            <IconCard className="animate-delay-[1.8s] col-start-3" imgSrc={dbIcon} altText="database icon" title="SQL Server" />
           </div>
         </RightPane>
       </PageContent>

@@ -26,16 +26,16 @@ export const PageContent = ({ children, className }) => {
 };
 
 export const LeftPane = ({ children, className }) => {
-  return <div className={`${className ?? ""} animate-fade-right w-full space-y-6 lg:mt-2 lg:space-y-8`.trim()}>{children}</div>;
+  return <div className={`${className ?? ""} animate-fade-up md:animate-fade-right w-full space-y-6 lg:mt-2 lg:space-y-8`.trim()}>{children}</div>;
 };
 
 export const RightPane = ({ children, className }) => {
-  return <div className={`${className ?? ""} animate-fade-left w-full lg:mt-2`.trim()}>{children}</div>;
+  return <div className={`${className ?? ""} animate-fade-up md:animate-fade-left w-full lg:mt-2`.trim()}>{children}</div>;
 };
 
 export const IconCard = ({ imgSrc, altText, title, className }) => {
   return (
-    <div className={`${className ?? ""} flex flex-col items-center gap-2`.trim()}>
+    <div className={`${className ?? ""} animate-fade-up md:animate-fade-left flex flex-col items-center gap-2`.trim()}>
       <img src={imgSrc} alt={altText} className="peer size-12 transition-all duration-500 hover:-translate-y-4 md:size-20 lg:size-24" />
       <p className="opacity-0 transition-all duration-500 peer-hover:-translate-y-4 peer-hover:opacity-100">{title}</p>
     </div>

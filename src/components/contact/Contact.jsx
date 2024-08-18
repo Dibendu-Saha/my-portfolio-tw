@@ -31,7 +31,7 @@ const Contact = () => {
             </label>
             <TextInput type="textarea" cols="10" rows="6" />
 
-            <Button className="col-start-2 mt-2 text-center">Send</Button>
+            <Button className="animate-fade-up col-start-2 mt-2 text-center">Send</Button>
           </div>
         </LeftPane>
 
@@ -39,16 +39,16 @@ const Contact = () => {
           <p className="text-center text-3xl font-extralight">Follow me on...</p>
 
           <div className="mt-5 flex justify-evenly md:mt-16">
-            <a href="https://www.linkedin.com/in/dibendu-saha/" target="_blank" rel="noreferrer" className="animate-fade-left">
+            <a href="https://www.linkedin.com/in/dibendu-saha/" target="_blank" rel="noreferrer">
               <IconCard imgSrc={linkedinIcon} altText="Linkedin icon" />
             </a>
-            <a href="https://github.com/Dibendu-Saha" target="_blank" rel="noreferrer" className="animate-fade-left animate-delay-[0.4s]">
+            <a href="https://github.com/Dibendu-Saha" target="_blank" rel="noreferrer" className="animate-delay-[0.4s]">
               <IconCard imgSrc={githubIcon} altText="Github icon" />
             </a>
-            <a href="https://www.instagram.com/dibendu.s/" target="_blank" rel="noreferrer" className="animate-fade-left animate-delay-[0.8s]">
+            <a href="https://www.instagram.com/dibendu.s/" target="_blank" rel="noreferrer" className="animate-delay-[0.8s]">
               <IconCard imgSrc={instagramIcon} altText="Instagram icon" />
             </a>
-            <a href="https://www.facebook.com/dibendu03" target="_blank" rel="noreferrer" className="animate-fade-left animate-delay-[1.2s]">
+            <a href="https://www.facebook.com/dibendu03" target="_blank" rel="noreferrer" className="animate-delay-[1.2s]">
               <IconCard imgSrc={fbIcon} altText="Facebook icon" />
             </a>
           </div>
