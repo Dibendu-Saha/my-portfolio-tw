@@ -26,16 +26,16 @@ export default {
             opacity: '1'
            }
         },
-        'reveal-icons-left': {
-          '0%': { 
-            transform: 'translateX(24px)',
-            opacity: '0'
-           },
-          '100%': { 
-            transform: 'translateX(0)',
-            opacity: '1'
-           }
-        },
+        // 'reveal-icons-left': {
+        //   '0%': { 
+        //     transform: 'translateX(24px)',
+        //     opacity: '0'
+        //    },
+        //   '100%': { 
+        //     transform: 'translateX(0)',
+        //     opacity: '1'
+        //    }
+        // },
       },
       animation: {
         swing: 'swing 2s ease-in-out infinite',
