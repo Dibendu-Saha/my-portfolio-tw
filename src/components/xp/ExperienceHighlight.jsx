@@ -14,7 +14,7 @@ const ExperienceHighlight = () => {
         Experience <span className="hidden md:inline-block">Highlight</span>
       </Heading>
 
-      <PageContent className="gap-4">
+      <PageContent className="gap-4 lg:gap-10">
         <LeftPane>
           <SummaryCard employerLogo={natwestLogo} jobTitle="Software Engineer" startDate="December 2022" endDate="Present">
             <ul className="list-disc space-y-2">
@@ -34,7 +34,7 @@ const ExperienceHighlight = () => {
           </SummaryCard>
         </LeftPane>
 
-        <RightPane>
+        <RightPane className="mt-2">
           <SummaryCard employerLogo={wfLogo} jobTitle="Technology Specialist" startDate="April 2018" endDate="August 2021">
             <ul className="list-disc">
               <li className="ml-4">Revamped the bank&#39;s investment app dealing with money market funds, with a primary focus on enhancing the UI/UX.</li>

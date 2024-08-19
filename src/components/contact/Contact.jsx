@@ -10,7 +10,7 @@ const Contact = () => {
     <Container>
       <Heading>Let's talk</Heading>
 
-      <PageContent className="md:gap-14">
+      <PageContent>
         <LeftPane>
           <p className="-mb-6 lg:-mb-7">Interested to know more?</p>
           <p className="lg:mb-12">Send me a 'hi'...</p>
@@ -38,7 +38,7 @@ const Contact = () => {
         <RightPane>
           <p className="text-center text-3xl font-extralight">Follow me on...</p>
 
-          <div className="mt-5 flex justify-evenly md:mt-16">
+          <div className="mt-5 flex justify-evenly lg:mt-16">
             <a href="https://www.linkedin.com/in/dibendu-saha/" target="_blank" rel="noreferrer">
               <IconCard imgSrc={linkedinIcon} altText="Linkedin icon" />
             </a>

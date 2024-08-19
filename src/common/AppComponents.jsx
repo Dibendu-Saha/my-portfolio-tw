@@ -18,7 +18,7 @@ export const Heading = ({ children, className, type = "" }) => {
 export const PageContent = ({ children, className }) => {
   return (
     <div
-      className={`${className ?? ""} flex flex-col gap-10 text-justify text-xs font-light leading-normal md:text-base lg:mt-12 lg:flex-row lg:gap-10 lg:leading-relaxed lg:tracking-wide`.trim()}
+      className={`${className ?? ""} flex flex-col gap-10 text-justify text-xs font-light leading-normal md:text-base lg:mt-12 lg:flex-row lg:leading-relaxed lg:tracking-wide`.trim()}
     >
       {children}
     </div>
