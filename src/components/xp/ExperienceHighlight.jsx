@@ -41,13 +41,7 @@ const ExperienceHighlight = () => {
             </ul>
           </SummaryCard>
 
-          <SummaryCard
-            employerLogo={downloadCvLogo}
-            jobTitle="Download CV"
-            className="mt-6 hidden md:flex lg:mt-8"
-            logoClassName="animate-swing"
-            actionable={true}
-          >
+          <SummaryCard employerLogo={downloadCvLogo} jobTitle="Download CV" className="mt-6 hidden md:flex lg:mt-8" logoClassName="animate-swing" actionable>
             <p>Download my CV to know more...</p>
           </SummaryCard>
         </RightPane>
