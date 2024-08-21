@@ -10,10 +10,10 @@ const Home = () => {
           <Heading className="animate-fade-down md:animate-fade-right" type={heading_type.bold}>
             Hey there!
           </Heading>
-          <Heading className="animate-type-fast mt-6">I'm Dibendu</Heading>
+          <Heading className="animate-type-fast lg:mt-6">I'm Dibendu</Heading>
         </div>
 
-        <div className="animate-fade-up md:animate-fade-left col-start-2 row-start-2 flex flex-col items-center gap-1">
+        <div className="col-start-2 row-start-2 flex animate-fade-up flex-col items-center gap-1 md:animate-fade-left">
           <p className="text-xl font-light tracking-[0.25em]">Developer</p>
           <p className="text-xl font-light tracking-[0.25em]">&amp;</p>
           {/* <p className="hidden text-xl font-light tracking-[0.25em] lg:block">Design Enthusiast</p> */}
