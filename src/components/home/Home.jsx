@@ -6,7 +6,7 @@ import homeImage from "../../assets/img/gallery/p-4.jpg";
 const Home = () => {
   return (
     <Container>
-      <div className="md:gap-y-30 mt-20 flex flex-col items-center justify-center gap-20 md:grid md:grid-cols-2 md:justify-items-center md:gap-x-0 md:gap-y-36">
+      <div className="md:gap-y-30 mt-20 flex flex-col items-center justify-center gap-40 md:grid md:grid-cols-2 md:justify-items-center md:gap-x-0 md:gap-y-36">
         <div>
           <Heading className="animate-fade-down md:animate-fade-right" type={heading_type.bold}>
             Hey there!
@@ -26,8 +26,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-        <img src={homeImage} className="size-56 rounded-full" alt="" />
+      <div className="absolute left-1/2 top-[345px] -translate-x-1/2 -translate-y-1/2 md:top-1/2">
+        <img src={homeImage} className="size-36 animate-swing rounded-full border-4 border-gray-200 lg:size-48" alt="" />
       </div>
       <Footer>
         <Button link={route.ABOUT_PERSONAL}>Let's Explore</Button>
