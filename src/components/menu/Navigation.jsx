@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Navigation = ({ children, to }) => {
   return (
-    <NavLink className={(navData) => navData.isActive && "scale-x-110 border-b border-[#6b5d4a]"} to={to}>
+    <NavLink className={(navData) => navData.isActive && "scale-x-110 border-b border-[#6b5d4a] transition-transform duration-300"} to={to}>
       {children}
     </NavLink>
   );

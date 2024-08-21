@@ -13,27 +13,27 @@ const Menu = () => {
     <ResponsiveLayout>
       <Navigation to={route.HOME}>
         <img src={homeIcon} className="size-6 md:hidden" alt="" />
-        <p className="hidden transition-all duration-200 hover:-translate-y-1 md:block">Home</p>
+        <p className="hidden transition-all duration-300 hover:-translate-y-1 md:block">Home</p>
       </Navigation>
 
       <Navigation to={route.ABOUT_PERSONAL}>
         <img src={aboutIcon} className="size-6 md:hidden" alt="" />
-        <p className="hidden transition-all duration-200 hover:-translate-y-1 md:block">About me</p>
+        <p className="hidden transition-all duration-300 hover:-translate-y-1 md:block">About me</p>
       </Navigation>
 
       <Navigation to={route.ABOUT_PROFESSIONAL}>
         <img src={workIcon} className="size-7 md:hidden" alt="" />
-        <p className="hidden transition-all duration-200 hover:-translate-y-1 md:block">What I do</p>
+        <p className="hidden transition-all duration-300 hover:-translate-y-1 md:block">What I do</p>
       </Navigation>
 
       <Navigation to={route.XP}>
         <img src={xpIcon} className="size-6 md:hidden" alt="" />
-        <p className="hidden transition-all duration-200 hover:-translate-y-1 md:block">Experience</p>
+        <p className="hidden transition-all duration-300 hover:-translate-y-1 md:block">Experience</p>
       </Navigation>
 
       <Navigation to={route.CONTACT}>
         <img src={contactIcon} className="size-6 scale-110 md:hidden" alt="" />
-        <p className="hidden transition-all duration-200 hover:-translate-y-1 md:block">Contact</p>
+        <p className="hidden transition-all duration-300 hover:-translate-y-1 md:block">Contact</p>
       </Navigation>
 
       {/* <Navigation to="/">
