@@ -63,7 +63,7 @@ export const Button = ({ children, link, className }) => {
 };
 
 export const Footer = ({ children }) => {
-  return <div className="fixed bottom-10 left-[50%] hidden translate-x-[-50%] animate-reveal-up md:block lg:bottom-16">{children}</div>;
+  return <div className="fixed bottom-10 left-1/2 hidden -translate-x-1/2 animate-reveal-up md:block lg:bottom-16">{children}</div>;
 };
 
 // List of reusable components -
