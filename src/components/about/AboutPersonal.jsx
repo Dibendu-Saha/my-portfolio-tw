@@ -31,12 +31,12 @@ const AboutPersonal = () => {
         </LeftPane>
         <RightPane>
           <div className="grid grid-cols-3 2xl:mx-12">
-            <img src={p1} className="transition-all duration-300 ease-out hover:scale-125" alt="image" />
-            <img src={p2} className="transition-all duration-300 ease-out hover:scale-125" alt="image" />
-            <img src={p3} className="transition-all duration-300 ease-out hover:scale-125" alt="image" />
-            <img src={p4} className="transition-all duration-300 ease-out hover:scale-125" alt="image" />
-            <img src={p5} className="transition-all duration-300 ease-out hover:scale-125" alt="image" />
-            <img src={p6} className="transition-all duration-300 ease-out hover:scale-125" alt="image" />
+            <img src={p1} className="transition-all duration-300 ease-out hover:-translate-x-5 hover:-translate-y-5 hover:scale-110" alt="image" />
+            <img src={p2} className="transition-all duration-300 ease-out hover:-translate-y-5 hover:scale-110" alt="image" />
+            <img src={p3} className="transition-all duration-300 ease-out hover:-translate-y-5 hover:translate-x-5 hover:scale-110" alt="image" />
+            <img src={p4} className="transition-all duration-300 ease-out hover:-translate-x-5 hover:translate-y-5 hover:scale-110" alt="image" />
+            <img src={p5} className="transition-all duration-300 ease-out hover:translate-y-5 hover:scale-110" alt="image" />
+            <img src={p6} className="transition-all duration-300 ease-out hover:translate-x-5 hover:translate-y-5 hover:scale-110" alt="image" />
           </div>
         </RightPane>
       </PageContent>
