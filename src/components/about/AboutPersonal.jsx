@@ -30,13 +30,13 @@ const AboutPersonal = () => {
           </p>
         </LeftPane>
         <RightPane>
-          <div className="mx-12 grid grid-cols-3 justify-items-center">
-            <img src={p1} className="transition-all duration-300 ease-out hover:scale-125" alt="" />
-            <img src={p2} className="transition-all duration-300 ease-out hover:scale-125" alt="" />
-            <img src={p3} className="transition-all duration-300 ease-out hover:scale-125" alt="" />
-            <img src={p4} className="transition-all duration-300 ease-out hover:scale-125" alt="" />
-            <img src={p5} className="transition-all duration-300 ease-out hover:scale-125" alt="" />
-            <img src={p6} className="transition-all duration-300 ease-out hover:scale-125" alt="" />
+          <div className="grid grid-cols-3 2xl:mx-12">
+            <img src={p1} className="transition-all duration-300 ease-out hover:scale-125" alt="image" />
+            <img src={p2} className="transition-all duration-300 ease-out hover:scale-125" alt="image" />
+            <img src={p3} className="transition-all duration-300 ease-out hover:scale-125" alt="image" />
+            <img src={p4} className="transition-all duration-300 ease-out hover:scale-125" alt="image" />
+            <img src={p5} className="transition-all duration-300 ease-out hover:scale-125" alt="image" />
+            <img src={p6} className="transition-all duration-300 ease-out hover:scale-125" alt="image" />
           </div>
         </RightPane>
       </PageContent>
