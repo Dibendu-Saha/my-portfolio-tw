@@ -31,7 +31,7 @@ const Contact = () => {
             </label>
             <TextInput type="textarea" cols="10" rows="6" />
 
-            <Button className="animate-fade-up col-start-2 mt-2 text-center">Send</Button>
+            <Button className="col-start-2 mt-2 animate-fade-up text-center">Send</Button>
           </div>
         </LeftPane>
 
@@ -54,6 +54,10 @@ const Contact = () => {
           </div>
         </RightPane>
       </PageContent>
+
+      <div className="absolute bottom-3 right-3 animate-fade-up text-xs animate-delay-1000">
+        <p>&copy; {new Date().getFullYear()}. All rights reserved.</p>
+      </div>
     </Container>
   );
 };
