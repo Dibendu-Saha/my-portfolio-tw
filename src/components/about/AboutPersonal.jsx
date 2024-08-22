@@ -30,7 +30,7 @@ const AboutPersonal = () => {
           </p>
         </LeftPane>
         <RightPane>
-          <div className="grid grid-cols-3 2xl:mx-12">
+          <div className="grid grid-cols-3 lg:max-xl:mx-12 lg:max-xl:w-80 lg:max-xl:grid-cols-2 2xl:mx-12">
             <img src={p1} className="transition-all duration-300 ease-out hover:-translate-x-5 hover:-translate-y-5 hover:scale-110" alt="image" />
             <img src={p2} className="transition-all duration-300 ease-out hover:-translate-y-5 hover:scale-110" alt="image" />
             <img src={p3} className="transition-all duration-300 ease-out hover:-translate-y-5 hover:translate-x-5 hover:scale-110" alt="image" />
