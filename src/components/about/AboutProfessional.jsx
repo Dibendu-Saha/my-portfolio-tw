@@ -5,6 +5,8 @@ import iconNewWindow from "../../assets/img/skills/icon-new-window.png";
 import reactIcon from "../../assets/img/skills/icon-react.svg";
 import reduxIcon from "../../assets/img/skills/icon-redux.svg";
 import jsIcon from "../../assets/img/skills/icon-javascript.svg";
+import twIcon from "../../assets/img/skills/icon-jquery.svg";
+import scssIcon from "../../assets/img/skills/icon-scss.svg";
 import jqueryIcon from "../../assets/img/skills/icon-jquery.svg";
 import htmlIcon from "../../assets/img/skills/icon-html.svg";
 import cssIcon from "../../assets/img/skills/icon-css3.svg";
@@ -57,13 +59,15 @@ const AboutProfessional = () => {
             <IconCard className="animate-delay-[0.4s]" imgSrc={jsIcon} altText="javascript icon" title="JavaScipt" />
             <IconCard className="animate-delay-[0.6s]" imgSrc={jqueryIcon} altText="jquery icon" title="jQuery" />
 
-            <IconCard className="animate-delay-[0.8s]" imgSrc={htmlIcon} altText="html icon" title="HTML" />
-            <IconCard className="animate-delay-[1s]" imgSrc={cssIcon} altText="css icon" title="CSS" />
-            <IconCard className="animate-delay-[1.2s]" imgSrc={dotNetIcon} altText="dot net core icon" title=".NET Core" />
-            <IconCard className="animate-delay-[1.4s]" imgSrc={cSharpIcon} altText="c sharp icon" title="C#" />
+            <IconCard className="animate-delay-[0.8s]" imgSrc={twIcon} altText="tailwind icon" title="Tailwind CSS" />
+            <IconCard className="animate-delay-[1s]" imgSrc={scssIcon} altText="scss icon" title="SCSS" />
+            <IconCard className="animate-delay-[1.2s]" imgSrc={htmlIcon} altText="html icon" title="HTML" />
+            <IconCard className="animate-delay-[1.4s]" imgSrc={cssIcon} altText="css icon" title="CSS" />
 
-            <IconCard className="animate-delay-[1.6s] col-start-2" imgSrc={apiIcon} altText="api icon" title="Web API" />
-            <IconCard className="animate-delay-[1.8s] col-start-3" imgSrc={dbIcon} altText="database icon" title="SQL Server" />
+            <IconCard className="animate-delay-[1.6s]" imgSrc={dotNetIcon} altText="dot net core icon" title=".NET Core" />
+            <IconCard className="animate-delay-[1.8s]" imgSrc={cSharpIcon} altText="c sharp icon" title="C#" />
+            <IconCard className="animate-delay-[2s]" imgSrc={apiIcon} altText="api icon" title="Web API" />
+            <IconCard className="animate-delay-[2.2s]" imgSrc={dbIcon} altText="database icon" title="SQL Server" />
           </div>
         </RightPane>
       </PageContent>
