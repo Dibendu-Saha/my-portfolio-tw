@@ -5,7 +5,7 @@ import iconNewWindow from "../../assets/img/skills/icon-new-window.png";
 import reactIcon from "../../assets/img/skills/icon-react.svg";
 import reduxIcon from "../../assets/img/skills/icon-redux.svg";
 import jsIcon from "../../assets/img/skills/icon-javascript.svg";
-import twIcon from "../../assets/img/skills/icon-jquery.svg";
+import twIcon from "../../assets/img/skills/icon-tailwind.svg";
 import scssIcon from "../../assets/img/skills/icon-scss.svg";
 import jqueryIcon from "../../assets/img/skills/icon-jquery.svg";
 import htmlIcon from "../../assets/img/skills/icon-html.svg";
