@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button, Container, Footer, Heading, LeftPane, PageContent, RightPane } from "../../common/AppComponents";
 import { route } from "../../common/app-constants";
 import p1 from "../../assets/img/gallery/p-1.jpg";
@@ -9,6 +9,13 @@ import p5 from "../../assets/img/gallery/p-5.jpg";
 import p6 from "../../assets/img/gallery/p-6.jpg";
 
 const AboutPersonal = () => {
+  const [p1Loaded, setP1Loaded] = useState(false),
+    [p2Loaded, setP2Loaded] = useState(false),
+    [p3Loaded, setP3Loaded] = useState(false),
+    [p4Loaded, setP4Loaded] = useState(false),
+    [p5Loaded, setP5Loaded] = useState(false),
+    [p6Loaded, setP6Loaded] = useState(false);
+
   return (
     <Container>
       <Heading>What's up!</Heading>
@@ -31,12 +38,42 @@ const AboutPersonal = () => {
         </LeftPane>
         <RightPane>
           <div className="grid grid-cols-3 lg:max-xl:mx-12 lg:max-xl:w-80 lg:max-xl:grid-cols-2 2xl:mx-12">
-            <img src={p1} className="transition-all duration-300 ease-out hover:-translate-x-5 hover:-translate-y-5 hover:scale-110" alt="image" />
-            <img src={p2} className="transition-all duration-300 ease-out hover:-translate-y-5 hover:scale-110" alt="image" />
-            <img src={p3} className="transition-all duration-300 ease-out hover:-translate-y-5 hover:translate-x-5 hover:scale-110" alt="image" />
-            <img src={p4} className="transition-all duration-300 ease-out hover:-translate-x-5 hover:translate-y-5 hover:scale-110" alt="image" />
-            <img src={p5} className="transition-all duration-300 ease-out hover:translate-y-5 hover:scale-110" alt="image" />
-            <img src={p6} className="transition-all duration-300 ease-out hover:translate-x-5 hover:translate-y-5 hover:scale-110" alt="image" />
+            <img
+              src={p1}
+              className={`${!p1Loaded && "hidden"} transition-all duration-300 ease-out hover:-translate-x-5 hover:-translate-y-5 hover:scale-110`}
+              onLoad={() => setP1Loaded(true)}
+              alt="image"
+            />
+            <img
+              src={p2}
+              className={`${!p2Loaded && "hidden"} transition-all duration-300 ease-out hover:-translate-y-5 hover:scale-110`}
+              onLoad={() => setP2Loaded(true)}
+              alt="image"
+            />
+            <img
+              src={p3}
+              className={`${!p3Loaded && "hidden"} transition-all duration-300 ease-out hover:-translate-y-5 hover:translate-x-5 hover:scale-110`}
+              onLoad={() => setP3Loaded(true)}
+              alt="image"
+            />
+            <img
+              src={p4}
+              className={`${!p4Loaded && "hidden"} transition-all duration-300 ease-out hover:-translate-x-5 hover:translate-y-5 hover:scale-110`}
+              onLoad={() => setP4Loaded(true)}
+              alt="image"
+            />
+            <img
+              src={p5}
+              className={`${!p5Loaded && "hidden"} transition-all duration-300 ease-out hover:translate-y-5 hover:scale-110`}
+              onLoad={() => setP5Loaded(true)}
+              alt="image"
+            />
+            <img
+              src={p6}
+              className={`${!p6Loaded && "hidden"} transition-all duration-300 ease-out hover:translate-x-5 hover:translate-y-5 hover:scale-110`}
+              onLoad={() => setP6Loaded(true)}
+              alt="image"
+            />
           </div>
         </RightPane>
       </PageContent>
