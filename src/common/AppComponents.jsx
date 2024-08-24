@@ -50,15 +50,21 @@ export const TextInput = ({ name, cols, rows, type = "" }) => {
   );
 };
 
-export const Button = ({ children, link, className }) => {
+export const Button = ({ children, className, onClick, link = "" }) => {
   const cn = className ?? "";
+  const defaultClass = "bg-[#46351d] p-3 text-xs font-extralight text-white transition-all duration-200 hover:bg-[#332615] hover:shadow-lg lg:p-4 lg:text-base";
   return (
-    <Link
-      to={link}
-      className={`${cn} bg-[#46351d] p-3 text-xs font-extralight text-white transition-all duration-200 hover:bg-[#332615] hover:shadow-lg lg:p-4 lg:text-base`.trim()}
-    >
-      {children}
-    </Link>
+    <>
+      {link ? (
+        <Link to={link} className={`${cn} ${defaultClass}`.trim()}>
+          {children}
+        </Link>
+      ) : (
+        <button onClick={onClick} className={`${cn} ${defaultClass}`.trim()}>
+          {children}
+        </button>
+      )}
+    </>
   );
 };
 
