@@ -42,11 +42,27 @@ export const IconCard = ({ imgSrc, altText, title, className }) => {
   );
 };
 
-export const TextInput = ({ name, cols, rows, type = "" }) => {
+export const TextInput = ({ name, value, onChange, onBlur, cols, rows, className, type = "" }) => {
+  const cn = className ?? "";
   return type === "textarea" ? (
-    <textarea cols={cols} rows={rows} name="message" className="resize-none border border-gray-300" />
+    <textarea
+      cols={cols}
+      rows={rows}
+      name="message"
+      value={value}
+      onChange={onChange}
+      onBlur={onBlur}
+      className={`${cn} resize-none border border-gray-300 px-2`.trim()}
+    />
   ) : (
-    <input type="text" name={name} className="h-8 border border-gray-300" />
+    <input
+      type="text"
+      name={name}
+      value={value}
+      onChange={onChange}
+      onBlur={onBlur}
+      className={`${cn} h-8 border border-gray-300 px-2 outline-gray-300`.trim()}
+    />
   );
 };
 
