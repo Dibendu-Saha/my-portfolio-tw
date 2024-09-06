@@ -4,11 +4,11 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- main
+  - main_pipeline
 
 steps:
-- task: AzureStaticWebApp@0
-  inputs:
-    app_location: '/'
-    output_location: 'build'
-    azure_static_web_apps_api_token: $(deployment_token)
+  - task: AzureStaticWebApp@0
+    inputs:
+      app_location: "/"
+      output_location: "build"
+      azure_static_web_apps_api_token: $(deployment_token)
