@@ -1,11 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import linkedinIcon from "../../assets/img/contact/icon-linkedin.svg";
 import githubIcon from "../../assets/img/contact/icon-github.svg";
 import instagramIcon from "../../assets/img/contact/icon-instagram.svg";
 import fbIcon from "../../assets/img/contact/icon-facebook.svg";
 import { Button, Container, Heading, IconCard, LeftPane, PageContent, RightPane, TextInput } from "../../common/AppComponents";
+import { ENDPOINT } from "../../services/endpoints";
 
 const Contact = () => {
+  const [name, setName] = useState(""),
+    [email, setEmail] = useState(""),
+    [message, setMessage] = useState(""),
+    [emailTriggered, setEmailTrigger] = useState(false),
+    [isValidEmail, setEmailValidity] = useState(true);
+
+  const validateEmailFormat = () => {
+    let emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    let isValid = emailRegex.test(email);
+
+    if (email.trim().length && !isValid) setEmailValidity(false);
+    else setEmailValidity(true);
+  };
+
+  const sendEmail = async () => {
+    setEmailTrigger(true);
+    if (!name || !email || !message || !isValidEmail) return;
+
+    try {
+      const res = await axios.post(`${ENDPOINT.SEND_EMAIL}?name=${name}&email=${email}`, { message });
+    } catch {
+    } finally {
+      setEmailTrigger(false);
+    }
+  };
+
   return (
     <Container>
       <Heading>Let's talk</Heading>
@@ -19,19 +47,34 @@ const Contact = () => {
             <label htmlFor="name" className="md:text-base">
               Name
             </label>
-            <TextInput name="name" />
+            <TextInput name="name" value={name} onChange={(e) => setName(e.target.value)} className={emailTriggered && !name ? "border-red-500" : ""} />
 
             <label htmlFor="email" className="md:text-base">
               Email
             </label>
-            <TextInput name="email" />
+            <TextInput
+              name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              onBlur={validateEmailFormat}
+              className={(emailTriggered && !email) || !isValidEmail ? "border-red-500" : ""}
+            />
 
             <label htmlFor="message" className="md:text-base">
               Message
             </label>
-            <TextInput type="textarea" cols="10" rows="6" />
+            <TextInput
+              type="textarea"
+              cols="10"
+              rows="6"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              className={emailTriggered && !message ? "border-red-500" : ""}
+            />
 
-            <Button className="col-start-2 mt-2 animate-fade-up text-center">Send</Button>
+            <Button onClick={sendEmail} className="col-start-2 mt-2 animate-fade-up text-center">
+              Send
+            </Button>
           </div>
         </LeftPane>
 
