@@ -6,6 +6,7 @@ import teksystemsLogo from "../../assets/img/xp/tek_logo.svg";
 import downloadCvLogo from "../../assets/img/xp/icon-resume.png";
 import SummaryCard from "./SummaryCard";
 import { route } from "../../common/app-constants";
+import { ENDPOINT } from "../../services/endpoints";
 
 const ExperienceHighlight = () => {
   return (
@@ -41,9 +42,11 @@ const ExperienceHighlight = () => {
             </ul>
           </SummaryCard>
 
-          <SummaryCard employerLogo={downloadCvLogo} jobTitle="Download CV" className="mt-6 hidden md:flex lg:mt-8" logoClassName="animate-swing" actionable>
-            <p>Download my CV to know more...</p>
-          </SummaryCard>
+          <a href={ENDPOINT.DOWNLOAD_CV} target="_blank" rel="noreferrer">
+            <SummaryCard employerLogo={downloadCvLogo} jobTitle="Download CV" className="mt-6 hidden md:flex lg:mt-8" logoClassName="animate-swing" actionable>
+              <p>Download my CV to know more...</p>
+            </SummaryCard>
+          </a>
         </RightPane>
       </PageContent>
 
@@ -53,7 +56,7 @@ const ExperienceHighlight = () => {
 
       <div className="fixed bottom-20 right-6 md:hidden">
         <a href="">
-          <img src={downloadCvLogo} alt="" className="animate-swing size-14" />
+          <img src={downloadCvLogo} alt="" className="size-14 animate-swing" />
         </a>
       </div>
     </Container>
