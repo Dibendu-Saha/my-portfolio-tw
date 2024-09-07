@@ -6,6 +6,7 @@ import instagramIcon from "../../assets/img/contact/icon-instagram.svg";
 import fbIcon from "../../assets/img/contact/icon-facebook.svg";
 import { Button, Container, Heading, IconCard, LeftPane, PageContent, RightPane, TextInput } from "../../common/AppComponents";
 import { ENDPOINT } from "../../services/endpoints";
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const [name, setName] = useState(""),
@@ -24,14 +25,40 @@ const Contact = () => {
 
   const sendEmail = async () => {
     setEmailTrigger(true);
-    if (!name || !email || !message || !isValidEmail) return;
+    if (!name || !email || !message) {
+      toast.warn("Please fill in all the input fields");
+      return;
+    } else if (!isValidEmail) {
+      toast.warn("Please enter a valid email address");
+      return;
+    }
 
     try {
-      const res = await axios.post(`${ENDPOINT.SEND_EMAIL}?name=${name}&email=${email}`, { message });
-    } catch {
+      await toast.promise(axios.post(`${ENDPOINT.SEND_EMAIL}?name=${name}&email=${email}`, { message }), {
+        pending: "Sending email...",
+        success: {
+          render() {
+            resetUserInput();
+            return "Thank you for your email. I shall get back to you as soon as possible.";
+          },
+        },
+        error: {
+          render({ data }) {
+            return data.response.data.message ?? "Something went wrong!";
+          },
+        },
+      });
+    } catch (exception) {
+      if (exception.response.data.statusText !== "ERR_INPUT_STR") alert("ERR: Exception!");
     } finally {
       setEmailTrigger(false);
     }
+  };
+
+  const resetUserInput = () => {
+    setName("");
+    setEmail("");
+    setMessage("");
   };
 
   return (

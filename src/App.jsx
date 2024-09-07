@@ -7,6 +7,8 @@ import Menu from "./components/menu/Menu";
 import Contact from "./components/contact/Contact";
 import ExperienceHighlight from "./components/xp/ExperienceHighlight";
 import { route } from "./common/app-constants";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./App.scss";
 
 const App = () => {
@@ -23,6 +25,8 @@ const App = () => {
 
         <Menu />
       </BrowserRouter>
+
+      <ToastContainer />
     </div>
   );
 };
