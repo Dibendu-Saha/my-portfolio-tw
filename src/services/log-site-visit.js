@@ -3,7 +3,7 @@ import { ENDPOINT } from "./endpoints";
 
 export const LogSiteVisit = async (page) => {
   const loc_data = await GetLocationData();
-  axios.get(process.env.REACT_APP_LOG_VISIT_API_ENDPOINT, {
+  axios.post(ENDPOINT.LOG_SITE_VISIT, loc_data, {
     params: { page, loc_data },
   });
 };
