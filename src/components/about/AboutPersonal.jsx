@@ -9,13 +9,6 @@ import p6 from "../../assets/img/gallery/p-6.jpg";
 import { route } from "../../common/app-constants";
 
 const AboutPersonal = ({ images }) => {
-  const [p1Loaded, setP1Loaded] = useState(false),
-    [p2Loaded, setP2Loaded] = useState(false),
-    [p3Loaded, setP3Loaded] = useState(false),
-    [p4Loaded, setP4Loaded] = useState(false),
-    [p5Loaded, setP5Loaded] = useState(false),
-    [p6Loaded, setP6Loaded] = useState(false);
-
   const { img1, img2, img3, img4, img5, img6 } = images;
 
   return (
