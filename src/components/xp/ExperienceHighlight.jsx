@@ -55,7 +55,7 @@ const ExperienceHighlight = () => {
       </Footer>
 
       <div className="fixed bottom-20 right-6 md:hidden">
-        <a href="">
+        <a href={ENDPOINT.DOWNLOAD_CV}>
           <img src={downloadCvLogo} alt="" className="size-14 animate-swing" />
         </a>
       </div>
