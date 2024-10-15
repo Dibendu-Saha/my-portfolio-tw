@@ -7,6 +7,7 @@ import p4 from "../../assets/img/gallery/p-4.jpg";
 import p5 from "../../assets/img/gallery/p-5.jpg";
 import p6 from "../../assets/img/gallery/p-6.jpg";
 import { route } from "../../common/app-constants";
+import GalleryImage from "./GalleryImage";
 
 const AboutPersonal = ({ images }) => {
   const { img1, img2, img3, img4, img5, img6 } = images;
@@ -33,28 +34,12 @@ const AboutPersonal = ({ images }) => {
         </LeftPane>
         <RightPane>
           <div className="grid grid-cols-3 lg:max-xl:mx-12 lg:max-xl:w-80 lg:max-xl:grid-cols-2 2xl:mx-12">
-            <img
-              src={img1.src.length ? img1.src : p1}
-              className={`transition-all duration-300 ease-out hover:-translate-x-5 hover:-translate-y-5 hover:scale-110`}
-              alt="image"
-            />
-            <img src={img2.src.length ? img2.src : p2} className={`transition-all duration-300 ease-out hover:-translate-y-5 hover:scale-110`} alt="image" />
-            <img
-              src={img3.src.length ? img3.src : p3}
-              className={`transition-all duration-300 ease-out hover:-translate-y-5 hover:translate-x-5 hover:scale-110`}
-              alt="image"
-            />
-            <img
-              src={img4.src.length ? img4.src : p4}
-              className={`transition-all duration-300 ease-out hover:-translate-x-5 hover:translate-y-5 hover:scale-110`}
-              alt="image"
-            />
-            <img src={img5.src.length ? img5.src : p5} className={`transition-all duration-300 ease-out hover:translate-y-5 hover:scale-110`} alt="image" />
-            <img
-              src={img6.src.length ? img6.src : p6}
-              className={`transition-all duration-300 ease-out hover:translate-x-5 hover:translate-y-5 hover:scale-110`}
-              alt="image"
-            />
+            <GalleryImage earlyImageSrc={img1.src.length} src={p1} />
+            <GalleryImage earlyImageSrc={img2.src.length} src={p2} />
+            <GalleryImage earlyImageSrc={img3.src.length} src={p3} />
+            <GalleryImage earlyImageSrc={img4.src.length} src={p4} />
+            <GalleryImage earlyImageSrc={img5.src.length} src={p5} />
+            <GalleryImage earlyImageSrc={img6.src.length} src={p6} />
           </div>
         </RightPane>
       </PageContent>
