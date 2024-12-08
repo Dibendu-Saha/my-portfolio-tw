@@ -48,7 +48,7 @@ jobs:
       # Step 3: Sync the build directory to S3
       - name: Deploy to S3
         run: |
-          aws s3 sync ./build s3://my-portfolio-v2 --delete
+          aws s3 sync ./dist s3://my-portfolio-v2 --delete
 
       # Step 4: Invalidate CloudFront Cache (Optional but recommended)
       # - name: Invalidate CloudFront Cache
