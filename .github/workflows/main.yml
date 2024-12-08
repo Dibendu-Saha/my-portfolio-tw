@@ -37,6 +37,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: List files in the repository
+        run: ls -alh /github/workspace
+
       # Step 2: Set up AWS CLI
       - name: Set up AWS CLI
         uses: aws-actions/configure-aws-credentials@v1
@@ -48,7 +51,7 @@ jobs:
       # Step 3: Sync the build directory to S3
       - name: Deploy to S3
         run: |
-          aws s3 sync dist/ s3://my-portfolio-v2 --delete
+          aws s3 sync /dist s3://my-portfolio-v2 --delete
 
       # Step 4: Invalidate CloudFront Cache (Optional but recommended)
       # - name: Invalidate CloudFront Cache
