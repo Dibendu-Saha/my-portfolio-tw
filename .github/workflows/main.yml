@@ -37,9 +37,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: List files in the repository
-        run: ls -alh /github/workspace
-
       # Step 2: Set up AWS CLI
       - name: Set up AWS CLI
         uses: aws-actions/configure-aws-credentials@v1
