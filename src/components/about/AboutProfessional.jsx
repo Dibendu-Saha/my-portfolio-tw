@@ -47,7 +47,7 @@ const AboutProfessional = () => {
           <p>
             At present, I'm a <strong>Sr. Software Engineer</strong> at <strong>NatWest Group</strong>, where I primarily work on the frontend, developing user
             interface components with <strong>React</strong> and <strong>SCSS</strong> and connect it via the Web API using <strong>C#, ASP.NET Core</strong>{" "}
-            and <strong>SQL Server</strong>..
+            and <strong>SQL Server</strong>.
           </p>
         </LeftPane>
 
