@@ -18,7 +18,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "20.16.0" # Set Node.js version to use (adjust to your preference)
+          node-version: 20.16.0 # Set Node.js version to use (adjust to your preference)
 
       # Step 3: Install dependencies
       - name: Install dependencies
@@ -36,6 +36,9 @@ jobs:
       # Step 1: Checkout code (for the deployment job)
       - name: Checkout code
         uses: actions/checkout@v3
+
+      - name: Show file location
+        uses: pwd
 
       # Step 2: Set up AWS CLI
       - name: Set up AWS CLI
