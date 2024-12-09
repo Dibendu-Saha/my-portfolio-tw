@@ -41,7 +41,7 @@ jobs:
         run: aws s3 sync ./dist s3://my-portfolio-v2 --delete
 
       # Step 7: Invalidate CloudFront Cache
-      # - name: Invalidate CloudFront Cache
-      #   run: |
-      #     DISTRIBUTION_ID=$(aws cloudfront list-distributions --query "DistributionList.Items[0].Id" --output text)
-      #     aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/*"
+      - name: Invalidate CloudFront Cache
+        run: |
+          DISTRIBUTION_ID=$(aws cloudfront list-distributions --query "DistributionList.Items[0].Id" --output text)
+          aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/*"
