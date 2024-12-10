@@ -20,12 +20,12 @@ import "react-toastify/dist/ReactToastify.css";
 import "./App.scss";
 
 const App = () => {
-  let img1 = new Image(),
-    img2 = new Image(),
-    img3 = new Image(),
-    img4 = new Image(),
-    img5 = new Image(),
-    img6 = new Image();
+  let img1: HTMLImageElement = new Image(),
+    img2: HTMLImageElement = new Image(),
+    img3: HTMLImageElement = new Image(),
+    img4: HTMLImageElement = new Image(),
+    img5: HTMLImageElement = new Image(),
+    img6: HTMLImageElement = new Image();
 
   useEffect(() => {
     img1.src = p1;
