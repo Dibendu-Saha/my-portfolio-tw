@@ -1,4 +1,3 @@
-import React from "react";
 import ResponsiveLayout from "./ResponsiveLayout";
 import homeIcon from "../../assets/img/menu/menu-home.svg";
 import aboutIcon from "../../assets/img/menu/menu-about.svg";
