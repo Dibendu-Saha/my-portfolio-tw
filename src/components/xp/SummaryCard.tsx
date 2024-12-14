@@ -1,4 +1,17 @@
-const SummaryCard = ({
+type SummaryCardComponentProps = {
+  children: JSX.Element;
+  employerLogo: string;
+  jobTitle: string;
+  startDate?: string;
+  endDate?: string;
+  className?: string;
+  logoClassName?: string;
+  actionable?: boolean;
+  imgSize?: string;
+  imageScale?: string;
+};
+
+const SummaryCard: React.FC<SummaryCardComponentProps> = ({
   children,
   employerLogo,
   jobTitle,
@@ -6,7 +19,6 @@ const SummaryCard = ({
   endDate,
   className,
   logoClassName,
-  onClick,
   actionable = false,
   imgSize = "12",
   imageScale = "1",

@@ -8,7 +8,7 @@ type ContainerComponentProps = {
 };
 
 type HeadingComponentProps = {
-  children: string | JSX.Element[];
+  children: React.ReactNode;
   className?: string;
   type?: string;
 };
