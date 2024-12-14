@@ -9,11 +9,11 @@ import { ENDPOINT } from "../../services/endpoints";
 import { toast } from "react-toastify";
 
 const Contact = () => {
-  const [name, setName] = useState(""),
-    [email, setEmail] = useState(""),
-    [message, setMessage] = useState(""),
-    [emailTriggered, setEmailTrigger] = useState(false),
-    [isValidEmail, setEmailValidity] = useState(true);
+  const [name, setName] = useState<string>(""),
+    [email, setEmail] = useState<string>(""),
+    [message, setMessage] = useState<string>(""),
+    [emailTriggered, setEmailTrigger] = useState<boolean>(false),
+    [isValidEmail, setEmailValidity] = useState<boolean>(true);
 
   const validateEmailFormat = () => {
     let emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
