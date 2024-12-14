@@ -24,7 +24,7 @@ type LeftPaneComponentProps = {
 };
 
 type RightPaneComponentProps = {
-  children: JSX.Element[];
+  children: JSX.Element | JSX.Element[];
   className?: string;
 };
 

@@ -1,4 +1,3 @@
-import React from "react";
 import { Button, Container, Footer, Heading, IconCard, LeftPane, PageContent, RightPane } from "../../common/AppComponents";
 import { route } from "../../common/app-constants";
 import iconNewWindow from "../../assets/img/skills/icon-new-window.png";

@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { Button, Container, Footer, Heading, LeftPane, PageContent, RightPane } from "../../common/AppComponents";
 import p1 from "../../assets/img/gallery/p-1.jpg";
 import p2 from "../../assets/img/gallery/p-2.jpg";
@@ -9,7 +8,18 @@ import p6 from "../../assets/img/gallery/p-6.jpg";
 import { route } from "../../common/app-constants";
 import GalleryImage from "./GalleryImage";
 
-const AboutPersonal = ({ images }) => {
+type AboutPersonalComponentProps = {
+  images: {
+    img1: string;
+    img2: string;
+    img3: string;
+    img4: string;
+    img5: string;
+    img6: string;
+  };
+};
+
+const AboutPersonal: React.FC<AboutPersonalComponentProps> = ({ images }) => {
   const { img1, img2, img3, img4, img5, img6 } = images;
 
   return (
@@ -34,12 +44,12 @@ const AboutPersonal = ({ images }) => {
         </LeftPane>
         <RightPane>
           <div className="grid grid-cols-3 lg:max-xl:mx-12 lg:max-xl:w-80 lg:max-xl:grid-cols-2 2xl:mx-12">
-            <GalleryImage earlyImageSrc={img1.src.length} src={p1} />
-            <GalleryImage earlyImageSrc={img2.src.length} src={p2} />
-            <GalleryImage earlyImageSrc={img3.src.length} src={p3} />
-            <GalleryImage earlyImageSrc={img4.src.length} src={p4} />
-            <GalleryImage earlyImageSrc={img5.src.length} src={p5} />
-            <GalleryImage earlyImageSrc={img6.src.length} src={p6} />
+            <GalleryImage earlyImageSrc={img1} src={p1} />
+            <GalleryImage earlyImageSrc={img2} src={p2} />
+            <GalleryImage earlyImageSrc={img3} src={p3} />
+            <GalleryImage earlyImageSrc={img4} src={p4} />
+            <GalleryImage earlyImageSrc={img5} src={p5} />
+            <GalleryImage earlyImageSrc={img6} src={p6} />
           </div>
         </RightPane>
       </PageContent>
