@@ -1,4 +1,3 @@
-import React from "react";
 import { Button, Container, Footer, Heading } from "../../common/AppComponents";
 import { heading_type, route } from "../../common/app-constants";
 import homeImage from "../../assets/img/gallery/p-4.jpg";

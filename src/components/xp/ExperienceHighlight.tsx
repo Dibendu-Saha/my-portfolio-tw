@@ -1,4 +1,3 @@
-import React from "react";
 import { Button, Container, Footer, Heading, LeftPane, PageContent, RightPane } from "../../common/AppComponents";
 import natwestLogo from "../../assets/img/xp/natwest_logo.svg";
 import wfLogo from "../../assets/img/xp/wf_logo.svg";

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { ChangeEvent, useState } from "react";
 import axios from "axios";
 import linkedinIcon from "../../assets/img/contact/icon-linkedin.svg";
 import githubIcon from "../../assets/img/contact/icon-github.svg";
@@ -9,11 +9,11 @@ import { ENDPOINT } from "../../services/endpoints";
 import { toast } from "react-toastify";
 
 const Contact = () => {
-  const [name, setName] = useState(""),
-    [email, setEmail] = useState(""),
-    [message, setMessage] = useState(""),
-    [emailTriggered, setEmailTrigger] = useState(false),
-    [isValidEmail, setEmailValidity] = useState(true);
+  const [name, setName] = useState<string>(""),
+    [email, setEmail] = useState<string>(""),
+    [message, setMessage] = useState<string>(""),
+    [emailTriggered, setEmailTrigger] = useState<boolean>(false),
+    [isValidEmail, setEmailValidity] = useState<boolean>(true);
 
   const validateEmailFormat = () => {
     let emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -43,12 +43,12 @@ const Contact = () => {
           },
         },
         error: {
-          render({ data }) {
+          render({ data }: any) {
             return data.response.data.message ?? "Something went wrong!";
           },
         },
       });
-    } catch (exception) {
+    } catch (exception: any) {
       if (exception.response.data.statusText !== "ERR_INPUT_STR") alert("ERR: Exception!");
     } finally {
       setEmailTrigger(false);
@@ -74,7 +74,12 @@ const Contact = () => {
             <label htmlFor="name" className="md:text-base">
               Name
             </label>
-            <TextInput name="name" value={name} onChange={(e) => setName(e.target.value)} className={emailTriggered && !name ? "border-red-500" : ""} />
+            <TextInput
+              name="name"
+              value={name}
+              onChange={(e: ChangeEvent<HTMLInputElement>) => setName(e.target.value)}
+              className={emailTriggered && !name ? "border-red-500" : ""}
+            />
 
             <label htmlFor="email" className="md:text-base">
               Email
@@ -82,7 +87,7 @@ const Contact = () => {
             <TextInput
               name="email"
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={(e: ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
               onBlur={validateEmailFormat}
               className={(emailTriggered && !email) || !isValidEmail ? "border-red-500" : ""}
             />
@@ -92,10 +97,11 @@ const Contact = () => {
             </label>
             <TextInput
               type="textarea"
-              cols="10"
-              rows="6"
+              cols={10}
+              rows={6}
+              name="message"
               value={message}
-              onChange={(e) => setMessage(e.target.value)}
+              onChange={(e: ChangeEvent<HTMLTextAreaElement>) => setMessage(e.target.value)}
               className={emailTriggered && !message ? "border-red-500" : ""}
             />
 
