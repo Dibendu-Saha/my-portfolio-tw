@@ -6,8 +6,33 @@ import downloadCvLogo from "../../assets/img/xp/icon-resume.png";
 import SummaryCard from "./SummaryCard";
 import { route } from "../../common/app-constants";
 import { ENDPOINT } from "../../services/endpoints";
+import axios from "axios";
 
 const ExperienceHighlight = () => {
+  const getAndDownloadCv = async () => {
+    const response = await axios(ENDPOINT.DOWNLOAD_CV_LAMBDA);
+    const data = response.data;
+
+    if (data.isBase64Encoded) {
+      // Decode base64 content
+      const pdfData: string = atob(data.body);
+
+      const blob: Blob = new Blob([new Uint8Array(pdfData.split("").map((c) => c.charCodeAt(0)))], { type: "application/pdf" });
+      const url: string = URL.createObjectURL(blob);
+
+      // Create a link to trigger the download
+      const link: HTMLAnchorElement = document.createElement("a");
+      link.href = url;
+      link.download = "CV_Dibendu_Saha.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+    } else {
+      throw new Error("Invalid response from server");
+    }
+  };
+
   return (
     <Container>
       <Heading>
@@ -41,7 +66,7 @@ const ExperienceHighlight = () => {
             </ul>
           </SummaryCard>
 
-          <a href={ENDPOINT.DOWNLOAD_CV} target="_blank" rel="noreferrer">
+          <a onClick={getAndDownloadCv} target="_blank" rel="noreferrer">
             <SummaryCard employerLogo={downloadCvLogo} jobTitle="Download CV" className="mt-6 hidden md:flex lg:mt-8" logoClassName="animate-swing" actionable>
               <p>Download my CV to know more...</p>
             </SummaryCard>
@@ -54,7 +79,7 @@ const ExperienceHighlight = () => {
       </Footer>
 
       <div className="fixed bottom-20 right-6 md:hidden">
-        <a href={ENDPOINT.DOWNLOAD_CV}>
+        <a onClick={getAndDownloadCv}>
           <img src={downloadCvLogo} alt="" className="size-14 animate-swing" />
         </a>
       </div>
