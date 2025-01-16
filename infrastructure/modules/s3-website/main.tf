@@ -55,6 +55,7 @@ resource "aws_s3_bucket_policy" "bucket_policy" {
 
 resource "aws_cloudfront_distribution" "s3_distribution" {
   origin {
+    # domain_name = aws_s3_bucket.test-bucket-rn.bucket_regional_domain_name
     domain_name = aws_s3_bucket_website_configuration.test-bucket-rn.website_endpoint
     origin_id   = aws_s3_bucket.test-bucket-rn.bucket
     # origin_access_control_id = aws_cloudfront_origin_access_control.default.id
