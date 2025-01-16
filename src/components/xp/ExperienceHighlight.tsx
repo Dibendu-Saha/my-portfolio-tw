@@ -10,13 +10,12 @@ import axios from "axios";
 
 const ExperienceHighlight = () => {
   const getAndDownloadCv = async () => {
-    const response = await axios(ENDPOINT.DOWNLOAD_CV_LAMBDA);
-    const data = response.data;
+    try {
+      const response = await axios.get(ENDPOINT.DOWNLOAD_CV_LAMBDA);
+      const data = response.data;
 
-    if (data.isBase64Encoded) {
       // Decode base64 content
-      const pdfData: string = atob(data.body);
-
+      const pdfData: string = atob(data);
       const blob: Blob = new Blob([new Uint8Array(pdfData.split("").map((c) => c.charCodeAt(0)))], { type: "application/pdf" });
       const url: string = URL.createObjectURL(blob);
 
@@ -28,7 +27,7 @@ const ExperienceHighlight = () => {
       link.click();
       document.body.removeChild(link);
       URL.revokeObjectURL(url);
-    } else {
+    } catch (ex) {
       throw new Error("Invalid response from server");
     }
   };
