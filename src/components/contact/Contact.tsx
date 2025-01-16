@@ -1,4 +1,4 @@
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, useState, useEffect } from "react";
 import axios from "axios";
 import linkedinIcon from "../../assets/img/contact/icon-linkedin.svg";
 import githubIcon from "../../assets/img/contact/icon-github.svg";
@@ -9,11 +9,16 @@ import { ENDPOINT } from "../../services/endpoints";
 import { toast } from "react-toastify";
 
 const Contact = () => {
+  useEffect(() => {
+    updateAndGetVisitCount();
+  }, []);
+
   const [name, setName] = useState<string>(""),
     [email, setEmail] = useState<string>(""),
     [message, setMessage] = useState<string>(""),
     [emailTriggered, setEmailTrigger] = useState<boolean>(false),
-    [isValidEmail, setEmailValidity] = useState<boolean>(true);
+    [isValidEmail, setEmailValidity] = useState<boolean>(true),
+    [visitorCount, setVisitorCount] = useState<number>(0);
 
   const validateEmailFormat = () => {
     let emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -21,6 +26,28 @@ const Contact = () => {
 
     if (email.trim().length && !isValid) setEmailValidity(false);
     else setEmailValidity(true);
+  };
+
+  const updateAndGetVisitCount = () => {
+    const VISIT_BASE_URL = "https://ly97iv5dcg.execute-api.ap-south-1.amazonaws.com/prod/visitor-count";
+    const VISIT_URL = VISIT_BASE_URL + "?TableName=PortfolioVisitorCount";
+    axios.get(VISIT_URL).then((res) => {
+      const count = ++res.data.Count;
+
+      const payload = {
+        TableName: "PortfolioVisitorCount",
+        Item: {
+          total_count: count,
+          created_date: new Date().toLocaleString(),
+        },
+      };
+      axios.post(VISIT_BASE_URL, payload).then(() => {
+        axios.get(VISIT_URL).then((res) => {
+          const count = res.data.Count;
+          setVisitorCount(count);
+        });
+      });
+    });
   };
 
   const sendEmail = async () => {
@@ -132,7 +159,10 @@ const Contact = () => {
       </PageContent>
 
       <div className="absolute bottom-3 right-3 animate-fade-up text-xs animate-delay-1000">
-        <p>&copy; {new Date().getFullYear()}. All rights reserved.</p>
+        <p>
+          Thank you for visiting. You were visitor #<strong>{visitorCount}</strong>.
+        </p>
+        <p className="mt-1 text-right">&copy; {new Date().getFullYear()}. All rights reserved.</p>
       </div>
     </Container>
   );
