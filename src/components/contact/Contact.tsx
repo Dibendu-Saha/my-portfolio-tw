@@ -5,7 +5,7 @@ import githubIcon from "../../assets/img/contact/icon-github.svg";
 import instagramIcon from "../../assets/img/contact/icon-instagram.svg";
 import fbIcon from "../../assets/img/contact/icon-facebook.svg";
 import { Button, Container, Heading, IconCard, LeftPane, PageContent, RightPane, TextInput } from "../../common/AppComponents";
-import { ENDPOINT } from "../../services/endpoints";
+import { ENDPOINT, API_GATEWAY } from "../../services/endpoints";
 import { toast } from "react-toastify";
 
 const Contact = () => {
@@ -29,20 +29,18 @@ const Contact = () => {
   };
 
   const updateAndGetVisitCount = () => {
-    const VISIT_BASE_URL = "https://ly97iv5dcg.execute-api.ap-south-1.amazonaws.com/prod/visitor-count";
-    const VISIT_URL = VISIT_BASE_URL + "?TableName=PortfolioVisitorCount";
-    axios.get(VISIT_URL).then((res) => {
+    axios.get(API_GATEWAY.VISITOR_COUNT + "?TableName=PortfolioVisitorCount").then((res) => {
       const count = ++res.data.Count;
 
       const payload = {
         TableName: "PortfolioVisitorCount",
         Item: {
-          total_count: count,
-          created_date: new Date().toLocaleString(),
+          TotalCount: count,
+          CreatedDate: new Date().toLocaleString(),
         },
       };
-      axios.post(VISIT_BASE_URL, payload).then(() => {
-        axios.get(VISIT_URL).then((res) => {
+      axios.post(API_GATEWAY.VISITOR_COUNT, payload).then(() => {
+        axios.get(API_GATEWAY.VISITOR_COUNT + "?TableName=PortfolioVisitorCount").then((res) => {
           const count = res.data.Count;
           setVisitorCount(count);
         });

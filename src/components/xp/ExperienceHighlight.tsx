@@ -5,13 +5,13 @@ import teksystemsLogo from "../../assets/img/xp/tek_logo.svg";
 import downloadCvLogo from "../../assets/img/xp/icon-resume.png";
 import SummaryCard from "./SummaryCard";
 import { route } from "../../common/app-constants";
-import { ENDPOINT } from "../../services/endpoints";
+import { API_GATEWAY } from "../../services/endpoints";
 import axios from "axios";
 
 const ExperienceHighlight = () => {
   const getAndDownloadCv = async () => {
     try {
-      const response = await axios.get(ENDPOINT.DOWNLOAD_CV_LAMBDA);
+      const response = await axios.get(API_GATEWAY.DOWNLOAD_CV);
       const data = response.data;
 
       // Decode base64 content
