@@ -1,9 +1,9 @@
 # About
 This repo houses source code files of my portfolio website - <br />https://dibendusaha.com 
 
-The site is hosted on AWS infrastructure, the GitHub repo url for which is - <br />https://github.com/Dibendu-Saha/portfolio-aws-infra
+The site is hosted on AWS infrastructure, the GitHub repo URL for which is - <br />https://github.com/Dibendu-Saha/portfolio-aws-infra
 
-Please feel free to roam around, in case you're curious.
+Please feel free to roam around, in case you're curious!
 <br /><br />
 
 ## Setup
