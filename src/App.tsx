@@ -8,13 +8,6 @@ import ExperienceHighlight from "./components/xp/ExperienceHighlight";
 import { useEffect } from "react";
 import { preloadGalleryImages } from "./utils/imagePreloader";
 
-import img1 from "./assets/img/gallery/p-1.jpg";
-import img2 from "./assets/img/gallery/p-2.jpg";
-import img3 from "./assets/img/gallery/p-3.jpg";
-import img4 from "./assets/img/gallery/p-4.jpg";
-import img5 from "./assets/img/gallery/p-5.jpg";
-import img6 from "./assets/img/gallery/p-6.jpg";
-
 import { route } from "./common/app-constants";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -32,7 +25,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path={route.HOME} element={<Home />} />
-          <Route path={route.ABOUT_PERSONAL} element={<AboutPersonal images={{ img1, img2, img3, img4, img5, img6 }} />} />
+          <Route path={route.ABOUT_PERSONAL} element={<AboutPersonal />} />
           <Route path={route.ABOUT_PROFESSIONAL} element={<AboutProfessional />} />
           <Route path={route.XP} element={<ExperienceHighlight />} />
           <Route path={route.CONTACT} element={<Contact />} />
