@@ -31,6 +31,7 @@ const Contact = () => {
   const updateAndGetVisitCount = () => {
     axios.get(API_GATEWAY.VISITOR_COUNT + "?TableName=PortfolioVisitorCount").then((res) => {
       const count = ++res.data.Count;
+      setVisitorCount(count);
 
       const payload = {
         TableName: "PortfolioVisitorCount",
@@ -39,12 +40,8 @@ const Contact = () => {
           CreatedDate: new Date().toLocaleString(),
         },
       };
-      axios.post(API_GATEWAY.VISITOR_COUNT, payload).then(() => {
-        axios.get(API_GATEWAY.VISITOR_COUNT + "?TableName=PortfolioVisitorCount").then((res) => {
-          const count = res.data.Count;
-          setVisitorCount(count);
-        });
-      });
+
+      axios.post(API_GATEWAY.VISITOR_COUNT, payload);
     });
   };
 
