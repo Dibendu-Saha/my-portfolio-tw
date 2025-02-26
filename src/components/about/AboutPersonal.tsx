@@ -3,18 +3,7 @@ import { route } from "../../common/app-constants";
 import GalleryImage from "./GalleryImage";
 import { galleryImages } from "../../utils/imagePreloader";
 
-type AboutPersonalComponentProps = {
-  images: {
-    img1: string;
-    img2: string;
-    img3: string;
-    img4: string;
-    img5: string;
-    img6: string;
-  };
-};
-
-const AboutPersonal: React.FC<AboutPersonalComponentProps> = ({ images }) => {
+const AboutPersonal: React.FC = () => {
   const { p1, p2, p3, p4, p5, p6 } = galleryImages;
 
   return (
