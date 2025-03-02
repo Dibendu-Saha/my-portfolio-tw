@@ -26,7 +26,14 @@ const Home = () => {
       </div>
 
       <div className="absolute left-1/2 top-[345px] -translate-x-1/2 -translate-y-1/2 md:top-[400px] lg:top-[430px]">
-        <img src={homeImage} className="size-36 animate-swing rounded-full border-4 border-gray-200 lg:size-48" alt="" />
+        <img
+          fetchPriority="high"
+          loading="eager"
+          decoding="async"
+          src={homeImage}
+          className="size-36 animate-swing rounded-full border-4 border-gray-200 lg:size-48"
+          alt=""
+        />
       </div>
       <Footer>
         <Button link={route.ABOUT_PERSONAL}>Let's Explore</Button>
