@@ -1,6 +1,6 @@
 import { Button, Container, Footer, Heading } from "../../common/AppComponents";
 import { heading_type, route } from "../../common/app-constants";
-import homeImage from "../../assets/img/gallery/p-4.jpg";
+import homeImage from "../../assets/img/home/p-4.avif";
 
 const Home = () => {
   return (
