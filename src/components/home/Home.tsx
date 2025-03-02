@@ -1,6 +1,6 @@
 import { Button, Container, Footer, Heading } from "../../common/AppComponents";
 import { heading_type, route } from "../../common/app-constants";
-import homeImage from "../../assets/img/home/p-4.avif";
+import { galleryImages } from "../../utils/imagePreloader";
 
 const Home = () => {
   return (
@@ -30,7 +30,7 @@ const Home = () => {
           fetchPriority="high"
           loading="eager"
           decoding="async"
-          src={homeImage}
+          src={galleryImages.homeImage}
           className="size-36 animate-swing rounded-full border-4 border-gray-200 lg:size-48"
           alt=""
         />
