@@ -6,8 +6,7 @@ import Menu from "./components/menu/Menu";
 import Contact from "./components/contact/Contact";
 import ExperienceHighlight from "./components/xp/ExperienceHighlight";
 import { useEffect } from "react";
-import { preloadGalleryImages } from "./utils/imagePreloader";
-
+import { preloadImages } from "./utils/imagePreloader";
 import { route } from "./common/app-constants";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -15,8 +14,8 @@ import "./App.scss";
 
 const App = () => {
   useEffect(() => {
-    preloadGalleryImages()
-      .then(() => console.log("Gallery images preloaded successfully"))
+    preloadImages()
+      .then(() => console.log("Images preload success"))
       .catch((error) => console.error("Error preloading gallery images:", error));
   }, []);
 

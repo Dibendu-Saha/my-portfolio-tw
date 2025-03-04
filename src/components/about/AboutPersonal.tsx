@@ -1,10 +1,10 @@
 import { Button, Container, Footer, Heading, LeftPane, PageContent, RightPane } from "../../common/AppComponents";
 import { route } from "../../common/app-constants";
 import GalleryImage from "./GalleryImage";
-import { galleryImages } from "../../utils/imagePreloader";
+import { siteImages } from "../../utils/imagePreloader";
 
 const AboutPersonal: React.FC = () => {
-  const { p1, p2, p3, p4, p5, p6 } = galleryImages;
+  const { p1, p2, p3, p4, p5, p6 } = siteImages;
 
   return (
     <Container>
