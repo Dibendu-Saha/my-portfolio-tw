@@ -1,20 +1,11 @@
 import { Button, Container, Footer, Heading, IconCard, LeftPane, PageContent, RightPane } from "../../common/AppComponents";
 import { route } from "../../common/app-constants";
+import { siteImages } from "../../utils/imagePreloader";
 import iconNewWindow from "../../assets/img/skills/icon-new-window.png";
-import reactIcon from "../../assets/img/skills/icon-react.svg";
-import reduxIcon from "../../assets/img/skills/icon-redux.svg";
-import jsIcon from "../../assets/img/skills/icon-javascript.svg";
-import twIcon from "../../assets/img/skills/icon-tailwind.svg";
-import scssIcon from "../../assets/img/skills/icon-scss.svg";
-import jqueryIcon from "../../assets/img/skills/icon-jquery.svg";
-import htmlIcon from "../../assets/img/skills/icon-html.svg";
-import cssIcon from "../../assets/img/skills/icon-css3.svg";
-import dotNetIcon from "../../assets/img/skills/icon-dotnet-core.svg";
-import cSharpIcon from "../../assets/img/skills/icon-c-sharp.svg";
-import apiIcon from "../../assets/img/skills/icon-api.svg";
-import dbIcon from "../../assets/img/skills/icon-database.svg";
 
 const AboutProfessional = () => {
+  const { reactIcon, reduxIcon, jsIcon, twIcon, scssIcon, jqueryIcon, htmlIcon, cssIcon, dotNetIcon, cSharpIcon, apiIcon, dbIcon } = siteImages;
+
   return (
     <Container>
       <Heading>What I do?</Heading>
