@@ -30,7 +30,7 @@ const ingest = async () => {
       embedding: e.embedding,
     }));
 
-    const { data, error } = await supabase.from("portfolio_documents").insert(chunkEmbeddingPair);
+    const { error } = await supabase.from("portfolio_documents").insert(chunkEmbeddingPair);
 
     if (error) {
       console.error("Supabase error:", error);
