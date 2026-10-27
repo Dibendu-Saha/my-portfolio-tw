@@ -5,6 +5,7 @@ import AboutProfessional from "./components/about/AboutProfessional";
 import Menu from "./components/menu/Menu";
 import Contact from "./components/contact/Contact";
 import ExperienceHighlight from "./components/xp/ExperienceHighlight";
+import FloatingChat from "./components/chat/FloatingChat";
 import { useEffect } from "react";
 import { preloadImages } from "./utils/imagePreloader";
 import { route } from "./common/app-constants";
@@ -31,6 +32,7 @@ const App = () => {
         </Routes>
 
         <Menu />
+        <FloatingChat />
       </BrowserRouter>
 
       <ToastContainer />
