@@ -1,6 +1,6 @@
 DIBENDU SAHA - PERSONAL & PROFESSIONAL PROFILE
 
-OVERVIEW
+OVERVIEW | DIBENDU SAHA
 Full Name: Dibendu Saha
 Title: Senior Software Engineer
 Current Location: Bangalore, Karnataka, India
@@ -9,27 +9,27 @@ Languages: Fluent in English, Hindi, Assamese, and Bengali (native language).
 Core Skills: Full-Stack development (.NET Core, C#, Web APIs, SQL Server), and Cloud technologies.
 Secondary Skills: Frontend engineering (React, TypeScript, Tailwind CSS)
 
-PERSONAL BACKGROUND & INTERESTS
+PERSONAL BACKGROUND & INTERESTS | DIBENDU SAHA
 Origin: Born and raised in Assam, currently living in Bangalore.
 Languages: Multilingual across English, Hindi, Assamese, and Bengali.
 Cooking: Passionate about cooking and experimenting with new recipes for family and friends.
 Biking & Motorcycling: Active member of professional riders' groups, enjoying weekend solo trips and long-distance group rides.
 Photography & Travel: Enthusiastic photographer with an interest in landscapes and travel across India.
 
-PROFESSIONAL SUMMARY
+PROFESSIONAL SUMMARY | DIBENDU SAHA
 Current Role: Senior Software Engineer at NatWest Group (December 2022 - Present).
 Domain Expertise: Banking & Financial Services, FX (Foreign Exchange) Trading Platforms, Investment Applications, Enterprise Statement of Work (SOW) Automation.
 Core Strengths: Designing responsive web interfaces and connecting them with resilient REST APIs.
 Engineering Background: Started in backend development with C#, ASP.NET, and SQL Server, before expanding into modern frontend architecture with React and TypeScript.
 Certifications: Microsoft Certified: Azure Fundamentals (AZ-900).
 
-TECHNICAL SKILLS & STACK
+TECHNICAL SKILLS & STACK | DIBENDU SAHA
 Frontend: React, TypeScript, JavaScript (ES6+), Redux, Context API, Tailwind CSS, SCSS, CSS3, HTML5, jQuery.
 Backend & APIs: C#, .NET Core, ASP.NET Core Web APIs, RESTful API design.
 Databases: Microsoft SQL Server, PostgreSQL / Supabase (pgvector).
 Cloud & DevOps: AWS (S3 static hosting, CloudFront, API Gateway, DynamoDB, Lambda), Microsoft Azure, Git, CI/CD pipelines.
 
-WORK HISTORY & EXPERIENCE
+WORK HISTORY & EXPERIENCE | DIBENDU SAHA
 
 NatWest Group (December 2022 - Present)
 Role: Software Engineer / Senior Software Engineer
@@ -50,7 +50,7 @@ Contributions:
 - Revamped the bank's investment application managing money market funds.
 - Focused on elevating UI/UX for financial analysts and investors.
 
-CONTACT & SOCIAL LINKS
+CONTACT & SOCIAL LINKS | DIBENDU SAHA
 Portfolio Website: React portfolio hosted on AWS S3 with interactive features.
 LinkedIn: https://www.linkedin.com/in/dibendu-saha/
 GitHub: https://github.com/Dibendu-Saha
