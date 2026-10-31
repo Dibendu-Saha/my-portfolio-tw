@@ -7,4 +7,5 @@ export const ENDPOINT = {
 export const API_GATEWAY = {
   DOWNLOAD_CV: "https://nm3g5uhsw3.execute-api.ap-south-1.amazonaws.com/prod/download-cv",
   VISITOR_COUNT: "https://nm3g5uhsw3.execute-api.ap-south-1.amazonaws.com/prod/visitor-count",
+  AI_CHAT: "https://nm3g5uhsw3.execute-api.ap-south-1.amazonaws.com/prod/ask-ai",
 };
