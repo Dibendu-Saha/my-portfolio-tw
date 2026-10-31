@@ -1,7 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
 import axios from "axios";
-import OpenAI from "openai";
-import { supabase } from "../../services/supabase";
 import { API_GATEWAY } from "../../services/endpoints";
 
 interface Message {
@@ -40,39 +38,10 @@ const FloatingChat: React.FC = () => {
     setLoading(true);
 
     try {
-      let answer = "";
-      if (!API_GATEWAY.CHAT) {
-        // 1. question    --> OpenAI     --> embeddings
-        const client = new OpenAI({
-          apiKey: import.meta.env.VITE_OPENAI_API_KEY,
-          dangerouslyAllowBrowser: true,
-        });
-
-        const embeddingResponse = await client.embeddings.create({
-          model: "text-embedding-3-small",
-          input: question,
-        });
-
-        const userQueryEmbeddings = embeddingResponse.data[0].embedding;
-
-        // 2. embeddings  --> supabase   --> similarity search
-        const searchResult = await supabase.rpc("match_documents", {
-          query_embedding: userQueryEmbeddings,
-          match_threshold: 0.3,
-          match_count: 3,
-        });
-
-        console.log(searchResult);
-        // 3. client app  <-- text chunk <-- supabase
-        // 4. text chunk  --> OpenAI     --> response
-
-        // const response = await axios.post(API_GATEWAY.CHAT, { question });
-        // answer = response.data?.answer || "No response received.";
-      } else {
-        // Quick MVP mock preview before AWS endpoint is wired up
-        await new Promise((resolve) => setTimeout(resolve, 600));
-        answer = "Thanks for asking! The AWS AI backend will be connected shortly. You can also reach Dibendu directly via the Contact page.";
-      }
+      const response = await axios.post<{ answer: string }>(API_GATEWAY.AI_CHAT, {
+        question,
+      });
+      const answer = response.data?.answer || "No response received.";
       setMessages((prev) => [...prev, { role: "assistant", text: answer }]);
     } catch (err) {
       console.error("Chat error:", err);
@@ -80,7 +49,7 @@ const FloatingChat: React.FC = () => {
         ...prev,
         {
           role: "assistant",
-          text: "Sorry, I had trouble reaching the AI assistant. Please try again in a moment.",
+          text: "Sorry, I had trouble reaching Dibendu's assistant. Please try again in a moment.",
         },
       ]);
     } finally {
