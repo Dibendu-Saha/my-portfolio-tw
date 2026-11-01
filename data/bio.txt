@@ -1,0 +1,59 @@
+DIBENDU SAHA - PERSONAL & PROFESSIONAL PROFILE
+
+OVERVIEW | DIBENDU SAHA
+Full Name: Dibendu Saha
+Title: Senior Software Engineer
+Current Location: Bangalore, Karnataka, India
+Hometown / Origin: Assam, India
+Languages: Fluent in English, Hindi, Assamese, and Bengali (native language).
+Core Skills: Full-Stack development (.NET Core, C#, Web APIs, SQL Server), and Cloud technologies.
+Secondary Skills: Frontend engineering (React, TypeScript, Tailwind CSS)
+
+PERSONAL BACKGROUND & INTERESTS | DIBENDU SAHA
+Origin: Born and raised in Assam, currently living in Bangalore.
+Languages: Multilingual across English, Hindi, Assamese, and Bengali.
+Cooking: Passionate about cooking and experimenting with new recipes for family and friends.
+Biking & Motorcycling: Active member of professional riders' groups, enjoying weekend solo trips and long-distance group rides.
+Photography & Travel: Enthusiastic photographer with an interest in landscapes and travel across India.
+
+PROFESSIONAL SUMMARY | DIBENDU SAHA
+Current Role: Senior Software Engineer at NatWest Group (December 2022 - Present).
+Domain Expertise: Banking & Financial Services, FX (Foreign Exchange) Trading Platforms, Investment Applications, Enterprise Statement of Work (SOW) Automation.
+Core Strengths: Designing responsive web interfaces and connecting them with resilient REST APIs.
+Engineering Background: Started in backend development with C#, ASP.NET, and SQL Server, before expanding into modern frontend architecture with React and TypeScript.
+Certifications: Microsoft Certified: Azure Fundamentals (AZ-900).
+
+TECHNICAL SKILLS & STACK | DIBENDU SAHA
+Frontend: React, TypeScript, JavaScript (ES6+), Redux, Context API, Tailwind CSS, SCSS, CSS3, HTML5, jQuery.
+Backend & APIs: C#, .NET Core, ASP.NET Core Web APIs, RESTful API design.
+Databases: Microsoft SQL Server, PostgreSQL / Supabase (pgvector).
+Cloud & DevOps: AWS (S3 static hosting, CloudFront, API Gateway, DynamoDB, Lambda), Microsoft Azure, Git, CI/CD pipelines.
+
+WORK HISTORY & EXPERIENCE | DIBENDU SAHA
+
+NatWest Group (December 2022 - Present)
+Role: Software Engineer / Senior Software Engineer
+Contributions:
+- Delivering critical user interface features for the bank's Foreign Exchange (FX) trading platform.
+- Contributed to the development and enhancement of the bank's internal enterprise app store.
+- Collaborated with global teams ensuring high reliability, banking compliance, and performant state management.
+
+TEKsystems (October 2021 - November 2022)
+Role: Application Developer
+Contributions:
+- Built and contributed to replacing Hewlett Packard Enterprise's (HPE) legacy manual workflow for creating and managing Statements of Work (SOW).
+- Automated PMO team oversight, resource allocation, costing matrices, and billing details.
+
+Wells Fargo (April 2018 - August 2021)
+Role: Technology Specialist
+Contributions:
+- Revamped the bank's investment application managing money market funds.
+- Focused on elevating UI/UX for financial analysts and investors.
+
+CONTACT & SOCIAL LINKS | DIBENDU SAHA
+Portfolio Website: React portfolio hosted on AWS S3 with interactive features.
+LinkedIn: https://www.linkedin.com/in/dibendu-saha/
+GitHub: https://github.com/Dibendu-Saha
+Instagram: https://www.instagram.com/dibendu.s/
+Facebook: https://www.facebook.com/dibendu03
+
