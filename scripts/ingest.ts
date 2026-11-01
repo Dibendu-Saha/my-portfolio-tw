@@ -4,7 +4,7 @@ import OpenAI from "openai";
 import { supabase } from "./config/supabase";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
 
-const ingest = (async () => {
+const ingest = async () => {
   const openai = new OpenAI();
 
   // 1. get file
@@ -28,22 +28,24 @@ const ingest = (async () => {
     /**
      * commented for fail safe: uncomment for ingestion
      **/
-    // const chunkEmbeddingPair = embeddings.data.map((e) => ({
-    //   content: textChunks[e.index],
-    //   embedding: e.embedding,
-    // }));
+    const chunkEmbeddingPair = embeddings.data.map((e) => ({
+      content: textChunks[e.index],
+      embedding: e.embedding,
+    }));
 
-    // const { error } = await supabase.from("portfolio_documents").insert(chunkEmbeddingPair);
+    const { error } = await supabase.from("portfolio_documents").insert(chunkEmbeddingPair);
 
-    // if (error) {
-    //   console.error("Supabase error:", error);
-    //   throw error;
-    // }
+    if (error) {
+      console.error("Supabase error:", error);
+      throw error;
+    }
 
-    // console.log("Successfully inserted", chunkEmbeddingPair.length, "records.");
+    console.log("Successfully inserted", chunkEmbeddingPair.length, "records.");
 
-    console.log("Save disabled temporarily.");
+    // console.log("Save disabled temporarily.");
   } catch (err) {
     console.error("Error during ingestion:", err);
   }
-})();
+};
+
+ingest();
